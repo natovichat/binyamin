@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<ModelDocumentManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Documents>
+    <Document FullPath="C:\Users\aviadna\Documents\GitHub\binyamin\Binyamin\Binyamin\Client\Properties\Client.lsml" Checksum="3A7D226CA4D415D1246742CE1C4DA70AB9A615A06049DA1EC99D9CA0D506573A" />
+    <Document FullPath="C:\Users\aviadna\Documents\GitHub\binyamin\Binyamin\Binyamin\Common\Properties\Common.lsml" Checksum="4030DFA6FF7C89A3F9A24C3D1DAE76ADFD5318CA29C4AF54DEA507F58C1EE75C" />
+  </Documents>
+</ModelDocumentManifest>

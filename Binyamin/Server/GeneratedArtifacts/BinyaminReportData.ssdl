@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="BinyaminReportDataStore" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="BinyaminReportDataStore">
+    <EntitySet Name="GetActivity" EntityType="BinyaminReportDataStore.ActivityView" store:Type="Tables" Schema="dbo" Table="Binyamin.Reporting.ActivityView" />
+    <EntitySet Name="GetSchools" EntityType="BinyaminReportDataStore.SchoolView" store:Type="Tables" Schema="dbo" Table="Binyamin.Reporting.SchoolView" />
+    <EntitySet Name="GetReportSchoolView" EntityType="BinyaminReportDataStore.ReportSchoolView" store:Type="Tables" Schema="dbo" Table="Binyamin.Reporting.ReportSchoolView" />
+    <EntitySet Name="GetLectureView" EntityType="BinyaminReportDataStore.LectureView" store:Type="Tables" Schema="dbo" Table="Binyamin.Reporting.LectureView" />
+    <EntitySet Name="GetCounselor" EntityType="BinyaminReportDataStore.CounselorView" store:Type="Tables" Schema="dbo" Table="Binyamin.Reporting.CounselorView" />
+    <EntitySet Name="GetfrequencyView" EntityType="BinyaminReportDataStore.frequencyView" store:Type="Tables" Schema="dbo" Table="Binyamin.Reporting.frequencyView" />
+    <EntitySet Name="GetSummaryYearView" EntityType="BinyaminReportDataStore.SummaryYear" store:Type="Tables" Schema="dbo" Table="Binyamin.Reporting.SummaryYear" />
+  </EntityContainer>
+  <EntityType Name="ActivityView">
+    <Key>
+      <PropertyRef Name="ActivityId" />
+    </Key>
+    <Property Name="ActivityId" Type="int" Nullable="false" />
+    <Property Name="SchoolName" Type="nvarchar(max)" />
+    <Property Name="ActivityDate" Type="datetime" Nullable="false" />
+    <Property Name="SchoolPartName" Type="nvarchar(max)" />
+    <Property Name="TopicCollection" Type="nvarchar(max)" />
+    <Property Name="Topic" Type="nvarchar(max)" />
+    <Property Name="TotalNumberOfClasses" Type="int" Nullable="false" />
+    <Property Name="TotalNumberOfCounselor" Type="int" Nullable="false" />
+    <Property Name="TotalNumberOfRounds" Type="int" Nullable="false" />
+    <Property Name="Comments" Type="nvarchar(max)" />
+    <Property Name="ActivityPlace" Type="nvarchar(max)" />
+    <Property Name="District" Type="nvarchar(max)" />
+    <Property Name="ActivityStatus" Type="nvarchar(max)" />
+    <Property Name="ActivityType" Type="nvarchar(max)" />
+    <Property Name="SchoolType" Type="nvarchar(max)" />
+    <Property Name="Contact" Type="nvarchar(max)" />
+    <Property Name="Audience" Type="nvarchar(max)" />
+    <Property Name="DistrictId" Type="int" Nullable="false" />
+    <Property Name="ContactPhone" Type="nvarchar(max)" />
+    <Property Name="CounselorInActivity" Type="nvarchar(max)" />
+    <Property Name="NumberOfAssigedCounselor" Type="int" Nullable="false" />
+    <Property Name="IsMissingCounselors" Type="bit" Nullable="false" />
+    <Property Name="StartTime" Type="datetime" Nullable="false" />
+    <Property Name="EndTime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SchoolView">
+    <Key>
+      <PropertyRef Name="SchoolId" />
+    </Key>
+    <Property Name="SchoolId" Type="int" Nullable="false" />
+    <Property Name="SchoolFullName" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="ReportSchoolView">
+    <Key>
+      <PropertyRef Name="ActivityId" />
+    </Key>
+    <Property Name="ActivityId" Type="int" Nullable="false" />
+    <Property Name="SchoolPartId" Type="int" Nullable="false" />
+    <Property Name="SchoolName" Type="nvarchar(max)" />
+    <Property Name="SchoolPartName" Type="nvarchar(max)" />
+    <Property Name="TopicCollection" Type="nvarchar(max)" />
+    <Property Name="Topic" Type="nvarchar(max)" />
+    <Property Name="TotalNumberOfClasses" Type="int" Nullable="false" />
+    <Property Name="TotalNumberOfCounselor" Type="int" Nullable="false" />
+    <Property Name="TotalNumberOfRounds" Type="int" Nullable="false" />
+    <Property Name="Comments" Type="nvarchar(max)" />
+    <Property Name="ActivityPlace" Type="nvarchar(max)" />
+    <Property Name="District" Type="nvarchar(max)" />
+    <Property Name="ActivityStatus" Type="nvarchar(max)" />
+    <Property Name="ActivityDate" Type="datetime" Nullable="false" />
+    <Property Name="ActivityType" Type="nvarchar(max)" />
+    <Property Name="SchoolType" Type="nvarchar(max)" />
+    <Property Name="Contact" Type="nvarchar(max)" />
+    <Property Name="Audience" Type="nvarchar(max)" />
+    <Property Name="ContactPhone" Type="nvarchar(max)" />
+    <Property Name="DistrictId" Type="int" Nullable="false" />
+    <Property Name="CounselorInActivity" Type="nvarchar(max)" />
+    <Property Name="NumberOfAssigedCounselor" Type="int" Nullable="false" />
+    <Property Name="IsMissingCounselors" Type="bit" Nullable="false" />
+    <Property Name="StartTime" Type="datetime" Nullable="false" />
+    <Property Name="EndTime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="LectureView">
+    <Key>
+      <PropertyRef Name="ActivityTopic" />
+    </Key>
+    <Property Name="ActivityTopic" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="NumberOfActivities" Type="int" Nullable="false" />
+    <Property Name="NumberOfCounselors" Type="int" Nullable="false" />
+    <Property Name="NumberOfClasses" Type="int" Nullable="false" />
+    <Property Name="ActivityType" Type="nvarchar(max)" />
+    <Property Name="ActivityTopicCollection" Type="nvarchar(max)" />
+    <Property Name="NumberOfRounds" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CounselorView">
+    <Key>
+      <PropertyRef Name="ActivityId" />
+    </Key>
+    <Property Name="CounselorInActivity" Type="nvarchar(max)" />
+    <Property Name="TopicCollection" Type="nvarchar(max)" />
+    <Property Name="Topic" Type="nvarchar(max)" />
+    <Property Name="SchoolName" Type="nvarchar(max)" />
+    <Property Name="SchoolPartName" Type="nvarchar(max)" />
+    <Property Name="ActivityPlace" Type="nvarchar(max)" />
+    <Property Name="ActivityDate" Type="datetime" Nullable="false" />
+    <Property Name="Audience" Type="nvarchar(max)" />
+    <Property Name="ActivityId" Type="int" Nullable="false" />
+    <Property Name="Month" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="frequencyView">
+    <Key>
+      <PropertyRef Name="SchoolName" />
+    </Key>
+    <Property Name="SchoolName" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="frequencyNum" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SummaryYear">
+    <Key>
+      <PropertyRef Name="TotalNumberOfClasses" />
+    </Key>
+    <Property Name="TotalNumberOfClasses" Type="int" Nullable="false" />
+    <Property Name="TotalNumberOfCounselor" Type="int" Nullable="false" />
+    <Property Name="NumOfLectures" Type="int" Nullable="false" />
+    <Property Name="ActivityDate" Type="int" Nullable="false" />
+  </EntityType>
+</Schema>

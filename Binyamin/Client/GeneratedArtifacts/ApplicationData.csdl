@@ -1,0 +1,1174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" Namespace="LightSwitchApplication" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityType Name="City">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="Edm.String" Nullable="false" MaxLength="255" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="City_District" Type="Edm.Int32" />
+    <NavigationProperty Name="SchoolParts" Relationship="LightSwitchApplication.SchoolPart_City" ToRole="SchoolPart" FromRole="City" />
+    <NavigationProperty Name="Counselors" Relationship="LightSwitchApplication.Counselor_City" ToRole="Counselor" FromRole="City" />
+    <NavigationProperty Name="DefaultDistrict" Relationship="LightSwitchApplication.City_District" ToRole="District" FromRole="City" />
+  </EntityType>
+  <EntityType Name="District">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="Edm.String" Nullable="false" MaxLength="255" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="SchoolParts" Relationship="LightSwitchApplication.SchoolPart_District" ToRole="SchoolPart" FromRole="District" />
+    <NavigationProperty Name="Cities" Relationship="LightSwitchApplication.City_District" ToRole="City" FromRole="District" />
+    <NavigationProperty Name="Counselors" Relationship="LightSwitchApplication.Counselor_District" ToRole="Counselor" FromRole="District" />
+    <NavigationProperty Name="Activities" Relationship="LightSwitchApplication.Activity_District" ToRole="Activity" FromRole="District" />
+  </EntityType>
+  <EntityType Name="ActivityType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="T" Type="Edm.String" Nullable="false" MaxLength="255" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="Activity" Relationship="LightSwitchApplication.Activity_ActivityType" ToRole="Activity" FromRole="ActivityType" />
+    <NavigationProperty Name="TopicCollections" Relationship="LightSwitchApplication.TopicCollection_ActivityType" ToRole="TopicCollection" FromRole="ActivityType" />
+  </EntityType>
+  <EntityType Name="School">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Titel" Type="Edm.String" Nullable="false" MaxLength="255" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="SchoolParts" Relationship="LightSwitchApplication.School_SchoolPart" ToRole="SchoolPart" FromRole="School" />
+    <NavigationProperty Name="PartnerSchools" Relationship="LightSwitchApplication.PartnerSchools_School" ToRole="PartnerSchools" FromRole="School" />
+  </EntityType>
+  <EntityType Name="SchoolPart">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SchoolName" Type="Edm.String" MaxLength="255" />
+    <Property Name="Adress" Type="Edm.String" MaxLength="255" />
+    <Property Name="PhoneNumber1" Type="Edm.String" MaxLength="255" />
+    <Property Name="PhoneNumber2" Type="Edm.String" MaxLength="255" />
+    <Property Name="FaxNumber" Type="Edm.String" MaxLength="255" />
+    <Property Name="Comments" Type="Edm.String" MaxLength="255" />
+    <Property Name="SchoolMapLink" Type="Edm.String" MaxLength="1024" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="School_SchoolPart" Type="Edm.Int32" Nullable="false" />
+    <Property Name="SchoolPart_SchoolType" Type="Edm.Int32" />
+    <Property Name="SchoolPart_City" Type="Edm.Int32" />
+    <Property Name="SchoolPart_District" Type="Edm.Int32" Nullable="false" />
+    <NavigationProperty Name="School" Relationship="LightSwitchApplication.School_SchoolPart" ToRole="School" FromRole="SchoolPart" />
+    <NavigationProperty Name="Contacts" Relationship="LightSwitchApplication.SchoolPart_Contact" ToRole="Contact" FromRole="SchoolPart" />
+    <NavigationProperty Name="Activities" Relationship="LightSwitchApplication.Activity_SchoolPart" ToRole="Activity" FromRole="SchoolPart" />
+    <NavigationProperty Name="SchoolType" Relationship="LightSwitchApplication.SchoolPart_SchoolType" ToRole="SchoolType" FromRole="SchoolPart" />
+    <NavigationProperty Name="City" Relationship="LightSwitchApplication.SchoolPart_City" ToRole="City" FromRole="SchoolPart" />
+    <NavigationProperty Name="District" Relationship="LightSwitchApplication.SchoolPart_District" ToRole="District" FromRole="SchoolPart" />
+    <NavigationProperty Name="PartnersReport" Relationship="LightSwitchApplication.PartnersReport_SchoolPart" ToRole="PartnersReport" FromRole="SchoolPart" />
+    <NavigationProperty Name="Orders" Relationship="LightSwitchApplication.Orders_SchoolPart" ToRole="Orders" FromRole="SchoolPart" />
+  </EntityType>
+  <EntityType Name="Activity">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ActivityDate" Type="Edm.DateTime" Nullable="false" />
+    <Property Name="Comments" Type="Edm.String" MaxLength="255" />
+    <Property Name="NumberOfCounselor" Type="Edm.Int32" Nullable="false" />
+    <Property Name="TotalNumberOfClasses" Type="Edm.Int32" Nullable="false" />
+    <Property Name="NumberOfRounds" Type="Edm.Int32" Nullable="false" />
+    <Property Name="OrderComments" Type="Edm.String" MaxLength="255" />
+    <Property Name="StartTime" Type="Edm.DateTime" Nullable="false" />
+    <Property Name="EndTime" Type="Edm.DateTime" Nullable="false" />
+    <Property Name="IsOpenForCounselorsCommit" Type="Edm.Boolean" Nullable="false" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="Activity_Topic" Type="Edm.Int32" />
+    <Property Name="Activity_Contact" Type="Edm.Int32" />
+    <Property Name="Activity_SchoolPart" Type="Edm.Int32" />
+    <Property Name="Activity_ActivityType" Type="Edm.Int32" />
+    <Property Name="Activity_Audience" Type="Edm.Int32" />
+    <Property Name="Activity_ActivityStatus" Type="Edm.Int32" Nullable="false" />
+    <Property Name="Activity_District" Type="Edm.Int32" />
+    <NavigationProperty Name="ActivityType" Relationship="LightSwitchApplication.Activity_ActivityType" ToRole="ActivityType" FromRole="Activity" />
+    <NavigationProperty Name="SchoolPart" Relationship="LightSwitchApplication.Activity_SchoolPart" ToRole="SchoolPart" FromRole="Activity" />
+    <NavigationProperty Name="Topic" Relationship="LightSwitchApplication.Activity_Topic" ToRole="Topic" FromRole="Activity" />
+    <NavigationProperty Name="Contact" Relationship="LightSwitchApplication.Activity_Contact" ToRole="Contact" FromRole="Activity" />
+    <NavigationProperty Name="Rounds" Relationship="LightSwitchApplication.Activity_Round" ToRole="Round" FromRole="Activity" />
+    <NavigationProperty Name="ActivityCounselors" Relationship="LightSwitchApplication.ActivityCounselor_Activity" ToRole="ActivityCounselor" FromRole="Activity" />
+    <NavigationProperty Name="Audience" Relationship="LightSwitchApplication.Activity_Audience" ToRole="Audience" FromRole="Activity" />
+    <NavigationProperty Name="ActivityStatus" Relationship="LightSwitchApplication.Activity_ActivityStatus" ToRole="ActivityStatus" FromRole="Activity" />
+    <NavigationProperty Name="District" Relationship="LightSwitchApplication.Activity_District" ToRole="District" FromRole="Activity" />
+    <NavigationProperty Name="PartnerReportActivities" Relationship="LightSwitchApplication.PartnerReportActivities_Activity" ToRole="PartnerReportActivities" FromRole="Activity" />
+    <NavigationProperty Name="ActivityCounselorCommits" Relationship="LightSwitchApplication.ActivityCounselorCommit_Activity" ToRole="ActivityCounselorCommit" FromRole="Activity" />
+  </EntityType>
+  <EntityType Name="Topic">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="Edm.String" Nullable="false" MaxLength="255" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="TopicCollection_Topic" Type="Edm.Int32" Nullable="false" />
+    <NavigationProperty Name="Meetings" Relationship="LightSwitchApplication.Meeting_Topic" ToRole="Meeting" FromRole="Topic" />
+    <NavigationProperty Name="Activities" Relationship="LightSwitchApplication.Activity_Topic" ToRole="Activity" FromRole="Topic" />
+    <NavigationProperty Name="TopicCollection" Relationship="LightSwitchApplication.TopicCollection_Topic" ToRole="TopicCollection" FromRole="Topic" />
+    <NavigationProperty Name="Orders" Relationship="LightSwitchApplication.Orders_Topic" ToRole="Orders" FromRole="Topic" />
+  </EntityType>
+  <EntityType Name="TopicCollection">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="Edm.String" Nullable="false" MaxLength="255" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="TopicCollection_ActivityType" Type="Edm.Int32" Nullable="false" />
+    <NavigationProperty Name="ActivityType" Relationship="LightSwitchApplication.TopicCollection_ActivityType" ToRole="ActivityType" FromRole="TopicCollection" />
+    <NavigationProperty Name="Topics" Relationship="LightSwitchApplication.TopicCollection_Topic" ToRole="Topic" FromRole="TopicCollection" />
+  </EntityType>
+  <EntityType Name="Counselor">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="Edm.String" MaxLength="255" />
+    <Property Name="LastName" Type="Edm.String" MaxLength="255" />
+    <Property Name="Email" Type="Edm.String" MaxLength="255" />
+    <Property Name="PhoneNumber1" Type="Edm.String" MaxLength="255" />
+    <Property Name="PhoneNumber2" Type="Edm.String" MaxLength="255" />
+    <Property Name="Comments" Type="Edm.String" MaxLength="255" />
+    <Property Name="Adress" Type="Edm.String" MaxLength="255" />
+    <Property Name="IsActive" Type="Edm.Boolean" />
+    <Property Name="MaxAcitivitiesPerYear" Type="Edm.Int32" />
+    <Property Name="Username" Type="Edm.String" MaxLength="255" />
+    <Property Name="Password" Type="Edm.String" MaxLength="255" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="Counselor_City" Type="Edm.Int32" />
+    <Property Name="Counselor_District" Type="Edm.Int32" />
+    <NavigationProperty Name="Meetings" Relationship="LightSwitchApplication.Meeting_Counselor" ToRole="Meeting" FromRole="Counselor" />
+    <NavigationProperty Name="City" Relationship="LightSwitchApplication.Counselor_City" ToRole="City" FromRole="Counselor" />
+    <NavigationProperty Name="ActivityCounselors" Relationship="LightSwitchApplication.ActivityCounselor_Counselor" ToRole="ActivityCounselor" FromRole="Counselor" />
+    <NavigationProperty Name="District" Relationship="LightSwitchApplication.Counselor_District" ToRole="District" FromRole="Counselor" />
+    <NavigationProperty Name="ActivityCounselorCommits" Relationship="LightSwitchApplication.ActivityCounselorCommit_Counselor" ToRole="ActivityCounselorCommit" FromRole="Counselor" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="Edm.String" Nullable="false" MaxLength="255" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="Contacts" Relationship="LightSwitchApplication.Role_Contact" ToRole="Contact" FromRole="Role" />
+  </EntityType>
+  <EntityType Name="SchoolType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="Edm.String" Nullable="false" MaxLength="255" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="SchoolParts" Relationship="LightSwitchApplication.SchoolPart_SchoolType" ToRole="SchoolPart" FromRole="SchoolType" />
+  </EntityType>
+  <EntityType Name="Round">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StartTime" Type="Edm.DateTime" />
+    <Property Name="StopTime" Type="Edm.DateTime" />
+    <Property Name="NumberOfStudentInMeeting" Type="Edm.Int32" Nullable="false" />
+    <Property Name="NumberOfMeetingsInRound" Type="Edm.Int32" Nullable="false" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="Activity_Round" Type="Edm.Int32" Nullable="false" />
+    <NavigationProperty Name="Meetings" Relationship="LightSwitchApplication.Round_Meeting" ToRole="Meeting" FromRole="Round" />
+    <NavigationProperty Name="Activity" Relationship="LightSwitchApplication.Activity_Round" ToRole="Activity" FromRole="Round" />
+  </EntityType>
+  <EntityType Name="Meeting">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ClassNumber" Type="Edm.Int32" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="Meeting_Counselor" Type="Edm.Int32" />
+    <Property Name="Meeting_Topic" Type="Edm.Int32" />
+    <Property Name="Round_Meeting" Type="Edm.Int32" Nullable="false" />
+    <Property Name="Meeting_Audience" Type="Edm.Int32" Nullable="false" />
+    <NavigationProperty Name="Counselor" Relationship="LightSwitchApplication.Meeting_Counselor" ToRole="Counselor" FromRole="Meeting" />
+    <NavigationProperty Name="Topic" Relationship="LightSwitchApplication.Meeting_Topic" ToRole="Topic" FromRole="Meeting" />
+    <NavigationProperty Name="Round" Relationship="LightSwitchApplication.Round_Meeting" ToRole="Round" FromRole="Meeting" />
+    <NavigationProperty Name="Audience" Relationship="LightSwitchApplication.Meeting_Audience" ToRole="Audience" FromRole="Meeting" />
+  </EntityType>
+  <EntityType Name="Contact">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FullName" Type="Edm.String" MaxLength="255" />
+    <Property Name="PhoneNumber1" Type="Edm.String" MaxLength="255" />
+    <Property Name="PhoneNumber2" Type="Edm.String" MaxLength="255" />
+    <Property Name="Email" Type="Edm.String" MaxLength="255" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="Role_Contact" Type="Edm.Int32" />
+    <Property Name="SchoolPart_Contact" Type="Edm.Int32" Nullable="false" />
+    <NavigationProperty Name="Activities" Relationship="LightSwitchApplication.Activity_Contact" ToRole="Activity" FromRole="Contact" />
+    <NavigationProperty Name="Role" Relationship="LightSwitchApplication.Role_Contact" ToRole="Role" FromRole="Contact" />
+    <NavigationProperty Name="SchoolPart" Relationship="LightSwitchApplication.SchoolPart_Contact" ToRole="SchoolPart" FromRole="Contact" />
+    <NavigationProperty Name="Orders" Relationship="LightSwitchApplication.Orders_Contact" ToRole="Orders" FromRole="Contact" />
+  </EntityType>
+  <EntityType Name="ActivityCounselor">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CounselorAnswer" Type="Edm.String" MaxLength="255" />
+    <Property Name="Assigned" Type="Edm.Boolean" Nullable="false" />
+    <Property Name="AsPermanent" Type="Edm.Boolean" Nullable="false" />
+    <Property Name="NumberOfRound" Type="Edm.Int32" Nullable="false" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="ActivityCounselor_Activity" Type="Edm.Int32" Nullable="false" />
+    <Property Name="ActivityCounselor_Counselor" Type="Edm.Int32" Nullable="false" />
+    <NavigationProperty Name="Activity" Relationship="LightSwitchApplication.ActivityCounselor_Activity" ToRole="Activity" FromRole="ActivityCounselor" />
+    <NavigationProperty Name="Counselor" Relationship="LightSwitchApplication.ActivityCounselor_Counselor" ToRole="Counselor" FromRole="ActivityCounselor" />
+  </EntityType>
+  <EntityType Name="Audience">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="Edm.String" Nullable="false" MaxLength="255" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="Meetings" Relationship="LightSwitchApplication.Meeting_Audience" ToRole="Meeting" FromRole="Audience" />
+    <NavigationProperty Name="Activities" Relationship="LightSwitchApplication.Activity_Audience" ToRole="Activity" FromRole="Audience" />
+    <NavigationProperty Name="Orders" Relationship="LightSwitchApplication.Orders_Audience" ToRole="Orders" FromRole="Audience" />
+  </EntityType>
+  <EntityType Name="ActivityStatus">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="Edm.String" Nullable="false" MaxLength="255" />
+    <Property Name="InternalId" Type="Edm.Int32" Nullable="false" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="Activities" Relationship="LightSwitchApplication.Activity_ActivityStatus" ToRole="Activity" FromRole="ActivityStatus" />
+  </EntityType>
+  <EntityType Name="CRs">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="Edm.String" Nullable="false" MaxLength="255" />
+    <Property Name="Status" Type="Edm.String" Nullable="false" MaxLength="255" />
+    <Property Name="Prioraty" Type="Edm.String" MaxLength="255" />
+    <Property Name="DateOfReolved" Type="Edm.DateTime" />
+    <Property Name="Type" Type="Edm.String" MaxLength="255" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="Partners">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="Edm.String" Nullable="false" MaxLength="255" />
+    <Property Name="LastName" Type="Edm.String" MaxLength="255" />
+    <Property Name="Address" Type="Edm.String" MaxLength="255" />
+    <Property Name="Email" Type="Edm.String" MaxLength="255" />
+    <Property Name="PhoneNumber" Type="Edm.String" MaxLength="255" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="Partners_PartnerTypes" Type="Edm.Int32" Nullable="false" />
+    <Property Name="Partners_PartnersGroups" Type="Edm.Int32" />
+    <NavigationProperty Name="PartnerTypes" Relationship="LightSwitchApplication.Partners_PartnerTypes" ToRole="PartnerTypes" FromRole="Partners" />
+    <NavigationProperty Name="PartnerSchools" Relationship="LightSwitchApplication.PartnerSchools_Partners" ToRole="PartnerSchools" FromRole="Partners" />
+    <NavigationProperty Name="PartnersGroups" Relationship="LightSwitchApplication.Partners_PartnersGroups" ToRole="PartnersGroups" FromRole="Partners" />
+  </EntityType>
+  <EntityType Name="PartnerSchools">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="PartnerSchools_Partners" Type="Edm.Int32" Nullable="false" />
+    <Property Name="PartnerSchools_School" Type="Edm.Int32" Nullable="false" />
+    <NavigationProperty Name="Partners" Relationship="LightSwitchApplication.PartnerSchools_Partners" ToRole="Partners" FromRole="PartnerSchools" />
+    <NavigationProperty Name="School" Relationship="LightSwitchApplication.PartnerSchools_School" ToRole="School" FromRole="PartnerSchools" />
+  </EntityType>
+  <EntityType Name="PartnersGroups">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="Edm.String" Nullable="false" MaxLength="255" />
+    <Property Name="MoreDetails" Type="Edm.String" MaxLength="255" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="Partner" Relationship="LightSwitchApplication.Partners_PartnersGroups" ToRole="Partners" FromRole="PartnersGroups" />
+    <NavigationProperty Name="PartnersReport" Relationship="LightSwitchApplication.PartnersReport_PartnersGroups" ToRole="PartnersReport" FromRole="PartnersGroups" />
+  </EntityType>
+  <EntityType Name="PartnerTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="Edm.String" Nullable="false" MaxLength="255" />
+    <Property Name="MoreDetails" Type="Edm.String" MaxLength="255" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="PartnersCollection" Relationship="LightSwitchApplication.Partners_PartnerTypes" ToRole="Partners" FromRole="PartnerTypes" />
+  </EntityType>
+  <EntityType Name="PartnersReport">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Img1" Type="Edm.String" MaxLength="1000" />
+    <Property Name="HeightImg1" Type="Edm.Int32" />
+    <Property Name="WidthImg1" Type="Edm.Int32" />
+    <Property Name="Title" Type="Edm.String" Nullable="false" MaxLength="255" />
+    <Property Name="Img2" Type="Edm.String" MaxLength="1000" />
+    <Property Name="HeightImg2" Type="Edm.Int32" />
+    <Property Name="WidthImg2" Type="Edm.Int32" />
+    <Property Name="Img3" Type="Edm.String" MaxLength="1000" />
+    <Property Name="HeightImg3" Type="Edm.Int32" />
+    <Property Name="WidthImg3" Type="Edm.Int32" />
+    <Property Name="StartDate" Type="Edm.DateTime" Nullable="false" />
+    <Property Name="EndDate" Type="Edm.DateTime" Nullable="false" />
+    <Property Name="Img4" Type="Edm.String" MaxLength="1000" />
+    <Property Name="HeightImg4" Type="Edm.Int32" />
+    <Property Name="WidthImg4" Type="Edm.Int32" />
+    <Property Name="Text" Type="Edm.String" MaxLength="255" />
+    <Property Name="Img5" Type="Edm.String" MaxLength="1000" />
+    <Property Name="HeightImg5" Type="Edm.Int32" />
+    <Property Name="WidthImg5" Type="Edm.Int32" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="PartnersReport_SchoolPart" Type="Edm.Int32" Nullable="false" />
+    <Property Name="PartnersReport_PartnersGroups" Type="Edm.Int32" Nullable="false" />
+    <NavigationProperty Name="SchoolPart" Relationship="LightSwitchApplication.PartnersReport_SchoolPart" ToRole="SchoolPart" FromRole="PartnersReport" />
+    <NavigationProperty Name="PartnersReportActivities" Relationship="LightSwitchApplication.PartnersReport_PartnerReportActivities" ToRole="PartnerReportActivities" FromRole="PartnersReport" />
+    <NavigationProperty Name="PartnersGroups" Relationship="LightSwitchApplication.PartnersReport_PartnersGroups" ToRole="PartnersGroups" FromRole="PartnersReport" />
+  </EntityType>
+  <EntityType Name="PartnerReportActivities">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="PartnerReportActivities_Activity" Type="Edm.Int32" Nullable="false" />
+    <Property Name="PartnersReport_PartnerReportActivities" Type="Edm.Int32" Nullable="false" />
+    <NavigationProperty Name="Activity" Relationship="LightSwitchApplication.PartnerReportActivities_Activity" ToRole="Activity" FromRole="PartnerReportActivities" />
+    <NavigationProperty Name="PartnersReport" Relationship="LightSwitchApplication.PartnersReport_PartnerReportActivities" ToRole="PartnersReport" FromRole="PartnerReportActivities" />
+  </EntityType>
+  <EntityType Name="Orders">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Email" Type="Edm.String" MaxLength="255" />
+    <Property Name="Phone" Type="Edm.String" MaxLength="255" />
+    <Property Name="RoundsNumber" Type="Edm.Int32" Nullable="false" />
+    <Property Name="DT1" Type="Edm.DateTime" />
+    <Property Name="DT2" Type="Edm.DateTime" />
+    <Property Name="DT3" Type="Edm.DateTime" />
+    <Property Name="Comment" Type="Edm.String" MaxLength="255" />
+    <Property Name="Approved" Type="Edm.Boolean" />
+    <Property Name="ChosenDate" Type="Edm.DateTime" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="Order_SchoolPart" Type="Edm.Int32" Nullable="false" />
+    <Property Name="Order_Contact" Type="Edm.Int32" Nullable="false" />
+    <Property Name="Order_Audience" Type="Edm.Int32" Nullable="false" />
+    <Property Name="Orders_Topic" Type="Edm.Int32" Nullable="false" />
+    <Property Name="Orders_OrderClassesAndCounslers" Type="Edm.Int32" Nullable="false" />
+    <NavigationProperty Name="SchoolPart" Relationship="LightSwitchApplication.Orders_SchoolPart" ToRole="SchoolPart" FromRole="Orders" />
+    <NavigationProperty Name="Contact" Relationship="LightSwitchApplication.Orders_Contact" ToRole="Contact" FromRole="Orders" />
+    <NavigationProperty Name="Topic" Relationship="LightSwitchApplication.Orders_Topic" ToRole="Topic" FromRole="Orders" />
+    <NavigationProperty Name="Audience" Relationship="LightSwitchApplication.Orders_Audience" ToRole="Audience" FromRole="Orders" />
+    <NavigationProperty Name="OrderClassesAndCounslers" Relationship="LightSwitchApplication.Orders_OrderClassesAndCounslers" ToRole="OrderClassesAndCounslers" FromRole="Orders" />
+  </EntityType>
+  <EntityType Name="Emails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Sender" Type="Edm.String" Nullable="false" MaxLength="255" />
+    <Property Name="Receiver" Type="Edm.String" Nullable="false" MaxLength="255" />
+    <Property Name="Subject" Type="Edm.String" MaxLength="1024" />
+    <Property Name="Message" Type="Edm.String" MaxLength="4000" />
+    <Property Name="ReceiverMail" Type="Edm.String" Nullable="false" MaxLength="255" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="UserPrefs">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MailAddress" Type="Edm.String" Nullable="false" MaxLength="255" />
+    <Property Name="Password" Type="Edm.String" Nullable="false" MaxLength="255" />
+    <Property Name="Server" Type="Edm.String" Nullable="false" MaxLength="255" />
+    <Property Name="Port" Type="Edm.String" Nullable="false" MaxLength="255" />
+    <Property Name="SSL" Type="Edm.String" Nullable="false" MaxLength="255" />
+    <Property Name="CreatedDate" Type="Edm.DateTime" Nullable="false" />
+    <Property Name="DisaplayName" Type="Edm.String" Nullable="false" MaxLength="255" />
+    <Property Name="rePassword" Type="Edm.String" Nullable="false" MaxLength="255" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="OrderClassesAndCounslers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ClassesNumber" Type="Edm.Int32" Nullable="false" />
+    <Property Name="CounslerNumber" Type="Edm.Int32" Nullable="false" />
+    <Property Name="Price" Type="Edm.Int32" Nullable="false" />
+    <Property Name="Summary" Type="Edm.String" MaxLength="1000" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="Orders" Relationship="LightSwitchApplication.Orders_OrderClassesAndCounslers" ToRole="Orders" FromRole="OrderClassesAndCounslers" />
+  </EntityType>
+  <EntityType Name="OrderPropertiesWrapper">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ClassesAmount" Type="Edm.Int32" Nullable="false" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+    <NavigationProperty Name="OrderProperties" Relationship="LightSwitchApplication.OrderPropertiesWrapper_OrderProperties" ToRole="OrderProperties" FromRole="OrderPropertiesWrapper" />
+  </EntityType>
+  <EntityType Name="OrderProperties">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CounslersAmount" Type="Edm.Int32" Nullable="false" />
+    <Property Name="Price" Type="Edm.Int32" Nullable="false" />
+    <Property Name="ActivityDuration" Type="Edm.String" Nullable="false" MaxLength="255" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="OrderPropertiesWrapper_OrderProperties" Type="Edm.Int32" Nullable="false" />
+    <NavigationProperty Name="OrderPropertiesWrappers" Relationship="LightSwitchApplication.OrderPropertiesWrapper_OrderProperties" ToRole="OrderPropertiesWrapper" FromRole="OrderProperties" />
+  </EntityType>
+  <EntityType Name="ActivityCounselorCommit">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Edm.Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RowVersion" Type="Edm.Binary" Nullable="false" ConcurrencyMode="Fixed" annotation:StoreGeneratedPattern="Computed" />
+    <Property Name="ActivityCounselorCommit_Activity" Type="Edm.Int32" Nullable="false" />
+    <Property Name="ActivityCounselorCommit_Counselor" Type="Edm.Int32" Nullable="false" />
+    <NavigationProperty Name="Activity" Relationship="LightSwitchApplication.ActivityCounselorCommit_Activity" ToRole="Activity" FromRole="ActivityCounselorCommit" />
+    <NavigationProperty Name="Counselor" Relationship="LightSwitchApplication.ActivityCounselorCommit_Counselor" ToRole="Counselor" FromRole="ActivityCounselorCommit" />
+  </EntityType>
+  <Association Name="Meeting_Counselor">
+    <End Role="Counselor" Type="LightSwitchApplication.Counselor" Multiplicity="0..1" />
+    <End Role="Meeting" Type="LightSwitchApplication.Meeting" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Counselor">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Meeting">
+        <PropertyRef Name="Meeting_Counselor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Meeting_Topic">
+    <End Role="Topic" Type="LightSwitchApplication.Topic" Multiplicity="0..1" />
+    <End Role="Meeting" Type="LightSwitchApplication.Meeting" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Topic">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Meeting">
+        <PropertyRef Name="Meeting_Topic" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Round_Meeting">
+    <End Role="Round" Type="LightSwitchApplication.Round" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Meeting" Type="LightSwitchApplication.Meeting" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Round">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Meeting">
+        <PropertyRef Name="Round_Meeting" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Activity_Topic">
+    <End Role="Topic" Type="LightSwitchApplication.Topic" Multiplicity="0..1" />
+    <End Role="Activity" Type="LightSwitchApplication.Activity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Topic">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Activity">
+        <PropertyRef Name="Activity_Topic" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Activity_Contact">
+    <End Role="Contact" Type="LightSwitchApplication.Contact" Multiplicity="0..1" />
+    <End Role="Activity" Type="LightSwitchApplication.Activity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Contact">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Activity">
+        <PropertyRef Name="Activity_Contact" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Role_Contact">
+    <End Role="Role" Type="LightSwitchApplication.Role" Multiplicity="0..1" />
+    <End Role="Contact" Type="LightSwitchApplication.Contact" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Contact">
+        <PropertyRef Name="Role_Contact" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="School_SchoolPart">
+    <End Role="School" Type="LightSwitchApplication.School" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="SchoolPart" Type="LightSwitchApplication.SchoolPart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="School">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SchoolPart">
+        <PropertyRef Name="School_SchoolPart" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SchoolPart_Contact">
+    <End Role="SchoolPart" Type="LightSwitchApplication.SchoolPart" Multiplicity="1" />
+    <End Role="Contact" Type="LightSwitchApplication.Contact" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SchoolPart">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Contact">
+        <PropertyRef Name="SchoolPart_Contact" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Activity_SchoolPart">
+    <End Role="SchoolPart" Type="LightSwitchApplication.SchoolPart" Multiplicity="0..1" />
+    <End Role="Activity" Type="LightSwitchApplication.Activity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SchoolPart">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Activity">
+        <PropertyRef Name="Activity_SchoolPart" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Activity_Round">
+    <End Role="Activity" Type="LightSwitchApplication.Activity" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Round" Type="LightSwitchApplication.Round" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Activity">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Round">
+        <PropertyRef Name="Activity_Round" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Activity_ActivityType">
+    <End Role="ActivityType" Type="LightSwitchApplication.ActivityType" Multiplicity="0..1" />
+    <End Role="Activity" Type="LightSwitchApplication.Activity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ActivityType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Activity">
+        <PropertyRef Name="Activity_ActivityType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TopicCollection_ActivityType">
+    <End Role="ActivityType" Type="LightSwitchApplication.ActivityType" Multiplicity="1" />
+    <End Role="TopicCollection" Type="LightSwitchApplication.TopicCollection" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ActivityType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TopicCollection">
+        <PropertyRef Name="TopicCollection_ActivityType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TopicCollection_Topic">
+    <End Role="TopicCollection" Type="LightSwitchApplication.TopicCollection" Multiplicity="1" />
+    <End Role="Topic" Type="LightSwitchApplication.Topic" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TopicCollection">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Topic">
+        <PropertyRef Name="TopicCollection_Topic" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SchoolPart_SchoolType">
+    <End Role="SchoolType" Type="LightSwitchApplication.SchoolType" Multiplicity="0..1" />
+    <End Role="SchoolPart" Type="LightSwitchApplication.SchoolPart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SchoolType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SchoolPart">
+        <PropertyRef Name="SchoolPart_SchoolType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SchoolPart_City">
+    <End Role="City" Type="LightSwitchApplication.City" Multiplicity="0..1" />
+    <End Role="SchoolPart" Type="LightSwitchApplication.SchoolPart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="City">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SchoolPart">
+        <PropertyRef Name="SchoolPart_City" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Counselor_City">
+    <End Role="City" Type="LightSwitchApplication.City" Multiplicity="0..1" />
+    <End Role="Counselor" Type="LightSwitchApplication.Counselor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="City">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Counselor">
+        <PropertyRef Name="Counselor_City" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ActivityCounselor_Activity">
+    <End Role="Activity" Type="LightSwitchApplication.Activity" Multiplicity="1" />
+    <End Role="ActivityCounselor" Type="LightSwitchApplication.ActivityCounselor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Activity">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ActivityCounselor">
+        <PropertyRef Name="ActivityCounselor_Activity" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ActivityCounselor_Counselor">
+    <End Role="Counselor" Type="LightSwitchApplication.Counselor" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ActivityCounselor" Type="LightSwitchApplication.ActivityCounselor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Counselor">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ActivityCounselor">
+        <PropertyRef Name="ActivityCounselor_Counselor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SchoolPart_District">
+    <End Role="District" Type="LightSwitchApplication.District" Multiplicity="1" />
+    <End Role="SchoolPart" Type="LightSwitchApplication.SchoolPart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="District">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SchoolPart">
+        <PropertyRef Name="SchoolPart_District" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="City_District">
+    <End Role="District" Type="LightSwitchApplication.District" Multiplicity="0..1" />
+    <End Role="City" Type="LightSwitchApplication.City" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="District">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="City">
+        <PropertyRef Name="City_District" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Meeting_Audience">
+    <End Role="Audience" Type="LightSwitchApplication.Audience" Multiplicity="1" />
+    <End Role="Meeting" Type="LightSwitchApplication.Meeting" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Audience">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Meeting">
+        <PropertyRef Name="Meeting_Audience" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Activity_Audience">
+    <End Role="Audience" Type="LightSwitchApplication.Audience" Multiplicity="0..1" />
+    <End Role="Activity" Type="LightSwitchApplication.Activity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Audience">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Activity">
+        <PropertyRef Name="Activity_Audience" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Counselor_District">
+    <End Role="District" Type="LightSwitchApplication.District" Multiplicity="0..1" />
+    <End Role="Counselor" Type="LightSwitchApplication.Counselor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="District">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Counselor">
+        <PropertyRef Name="Counselor_District" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Activity_ActivityStatus">
+    <End Role="ActivityStatus" Type="LightSwitchApplication.ActivityStatus" Multiplicity="1" />
+    <End Role="Activity" Type="LightSwitchApplication.Activity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ActivityStatus">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Activity">
+        <PropertyRef Name="Activity_ActivityStatus" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Activity_District">
+    <End Role="District" Type="LightSwitchApplication.District" Multiplicity="0..1" />
+    <End Role="Activity" Type="LightSwitchApplication.Activity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="District">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Activity">
+        <PropertyRef Name="Activity_District" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Partners_PartnerTypes">
+    <End Role="PartnerTypes" Type="LightSwitchApplication.PartnerTypes" Multiplicity="1" />
+    <End Role="Partners" Type="LightSwitchApplication.Partners" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PartnerTypes">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Partners">
+        <PropertyRef Name="Partners_PartnerTypes" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PartnerSchools_Partners">
+    <End Role="Partners" Type="LightSwitchApplication.Partners" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="PartnerSchools" Type="LightSwitchApplication.PartnerSchools" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Partners">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PartnerSchools">
+        <PropertyRef Name="PartnerSchools_Partners" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PartnerSchools_School">
+    <End Role="School" Type="LightSwitchApplication.School" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="PartnerSchools" Type="LightSwitchApplication.PartnerSchools" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="School">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PartnerSchools">
+        <PropertyRef Name="PartnerSchools_School" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Partners_PartnersGroups">
+    <End Role="PartnersGroups" Type="LightSwitchApplication.PartnersGroups" Multiplicity="0..1" />
+    <End Role="Partners" Type="LightSwitchApplication.Partners" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PartnersGroups">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Partners">
+        <PropertyRef Name="Partners_PartnersGroups" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PartnerReportActivities_Activity">
+    <End Role="Activity" Type="LightSwitchApplication.Activity" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="PartnerReportActivities" Type="LightSwitchApplication.PartnerReportActivities" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Activity">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PartnerReportActivities">
+        <PropertyRef Name="PartnerReportActivities_Activity" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PartnersReport_PartnerReportActivities">
+    <End Role="PartnersReport" Type="LightSwitchApplication.PartnersReport" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="PartnerReportActivities" Type="LightSwitchApplication.PartnerReportActivities" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PartnersReport">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PartnerReportActivities">
+        <PropertyRef Name="PartnersReport_PartnerReportActivities" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PartnersReport_SchoolPart">
+    <End Role="SchoolPart" Type="LightSwitchApplication.SchoolPart" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="PartnersReport" Type="LightSwitchApplication.PartnersReport" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SchoolPart">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PartnersReport">
+        <PropertyRef Name="PartnersReport_SchoolPart" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Orders_SchoolPart">
+    <End Role="SchoolPart" Type="LightSwitchApplication.SchoolPart" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Orders" Type="LightSwitchApplication.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SchoolPart">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="Order_SchoolPart" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Orders_Contact">
+    <End Role="Contact" Type="LightSwitchApplication.Contact" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Orders" Type="LightSwitchApplication.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Contact">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="Order_Contact" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Orders_Audience">
+    <End Role="Audience" Type="LightSwitchApplication.Audience" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Orders" Type="LightSwitchApplication.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Audience">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="Order_Audience" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Orders_Topic">
+    <End Role="Topic" Type="LightSwitchApplication.Topic" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Orders" Type="LightSwitchApplication.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Topic">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="Orders_Topic" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PartnersReport_PartnersGroups">
+    <End Role="PartnersGroups" Type="LightSwitchApplication.PartnersGroups" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="PartnersReport" Type="LightSwitchApplication.PartnersReport" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PartnersGroups">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PartnersReport">
+        <PropertyRef Name="PartnersReport_PartnersGroups" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Orders_OrderClassesAndCounslers">
+    <End Role="OrderClassesAndCounslers" Type="LightSwitchApplication.OrderClassesAndCounslers" Multiplicity="1" />
+    <End Role="Orders" Type="LightSwitchApplication.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrderClassesAndCounslers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="Orders_OrderClassesAndCounslers" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="OrderPropertiesWrapper_OrderProperties">
+    <End Role="OrderPropertiesWrapper" Type="LightSwitchApplication.OrderPropertiesWrapper" Multiplicity="1" />
+    <End Role="OrderProperties" Type="LightSwitchApplication.OrderProperties" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrderPropertiesWrapper">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OrderProperties">
+        <PropertyRef Name="OrderPropertiesWrapper_OrderProperties" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ActivityCounselorCommit_Activity">
+    <End Role="Activity" Type="LightSwitchApplication.Activity" Multiplicity="1" />
+    <End Role="ActivityCounselorCommit" Type="LightSwitchApplication.ActivityCounselorCommit" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Activity">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ActivityCounselorCommit">
+        <PropertyRef Name="ActivityCounselorCommit_Activity" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ActivityCounselorCommit_Counselor">
+    <End Role="Counselor" Type="LightSwitchApplication.Counselor" Multiplicity="1" />
+    <End Role="ActivityCounselorCommit" Type="LightSwitchApplication.ActivityCounselorCommit" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Counselor">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ActivityCounselorCommit">
+        <PropertyRef Name="ActivityCounselorCommit_Counselor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ApplicationDataObjectContext" m:IsDefaultEntityContainer="true">
+    <EntitySet Name="Cities" EntityType="LightSwitchApplication.City" />
+    <EntitySet Name="Districts" EntityType="LightSwitchApplication.District" />
+    <EntitySet Name="ActivityTypes" EntityType="LightSwitchApplication.ActivityType" />
+    <EntitySet Name="Schools" EntityType="LightSwitchApplication.School" />
+    <EntitySet Name="SchoolParts" EntityType="LightSwitchApplication.SchoolPart" />
+    <EntitySet Name="Activities" EntityType="LightSwitchApplication.Activity" />
+    <EntitySet Name="Topics" EntityType="LightSwitchApplication.Topic" />
+    <EntitySet Name="TopicCollections" EntityType="LightSwitchApplication.TopicCollection" />
+    <EntitySet Name="Counselors" EntityType="LightSwitchApplication.Counselor" />
+    <EntitySet Name="Roles" EntityType="LightSwitchApplication.Role" />
+    <EntitySet Name="SchoolTypes" EntityType="LightSwitchApplication.SchoolType" />
+    <EntitySet Name="Rounds" EntityType="LightSwitchApplication.Round" />
+    <EntitySet Name="Meetings" EntityType="LightSwitchApplication.Meeting" />
+    <EntitySet Name="Contacts" EntityType="LightSwitchApplication.Contact" />
+    <EntitySet Name="ActivityCounselors" EntityType="LightSwitchApplication.ActivityCounselor" />
+    <EntitySet Name="Audiences" EntityType="LightSwitchApplication.Audience" />
+    <EntitySet Name="ActivityStatus" EntityType="LightSwitchApplication.ActivityStatus" />
+    <EntitySet Name="CRsSet" EntityType="LightSwitchApplication.CRs" />
+    <EntitySet Name="Partners" EntityType="LightSwitchApplication.Partners" />
+    <EntitySet Name="PartnerSchools" EntityType="LightSwitchApplication.PartnerSchools" />
+    <EntitySet Name="PartnersGroups" EntityType="LightSwitchApplication.PartnersGroups" />
+    <EntitySet Name="PartnerTypes" EntityType="LightSwitchApplication.PartnerTypes" />
+    <EntitySet Name="PartnersReport" EntityType="LightSwitchApplication.PartnersReport" />
+    <EntitySet Name="PartnersReportActivities" EntityType="LightSwitchApplication.PartnerReportActivities" />
+    <EntitySet Name="Orders" EntityType="LightSwitchApplication.Orders" />
+    <EntitySet Name="Emails" EntityType="LightSwitchApplication.Emails" />
+    <EntitySet Name="UserPrefs" EntityType="LightSwitchApplication.UserPrefs" />
+    <EntitySet Name="OrderClassesAndCounslersSet" EntityType="LightSwitchApplication.OrderClassesAndCounslers" />
+    <EntitySet Name="OrderPropertiesWrappers" EntityType="LightSwitchApplication.OrderPropertiesWrapper" />
+    <EntitySet Name="OrderProperties" EntityType="LightSwitchApplication.OrderProperties" />
+    <EntitySet Name="ActivityCounselorCommits" EntityType="LightSwitchApplication.ActivityCounselorCommit" />
+    <AssociationSet Name="Meeting_Counselor" Association="LightSwitchApplication.Meeting_Counselor">
+      <End Role="Counselor" EntitySet="Counselors" />
+      <End Role="Meeting" EntitySet="Meetings" />
+    </AssociationSet>
+    <AssociationSet Name="Meeting_Topic" Association="LightSwitchApplication.Meeting_Topic">
+      <End Role="Topic" EntitySet="Topics" />
+      <End Role="Meeting" EntitySet="Meetings" />
+    </AssociationSet>
+    <AssociationSet Name="Round_Meeting" Association="LightSwitchApplication.Round_Meeting">
+      <End Role="Round" EntitySet="Rounds" />
+      <End Role="Meeting" EntitySet="Meetings" />
+    </AssociationSet>
+    <AssociationSet Name="Activity_Topic" Association="LightSwitchApplication.Activity_Topic">
+      <End Role="Topic" EntitySet="Topics" />
+      <End Role="Activity" EntitySet="Activities" />
+    </AssociationSet>
+    <AssociationSet Name="Activity_Contact" Association="LightSwitchApplication.Activity_Contact">
+      <End Role="Contact" EntitySet="Contacts" />
+      <End Role="Activity" EntitySet="Activities" />
+    </AssociationSet>
+    <AssociationSet Name="Role_Contact" Association="LightSwitchApplication.Role_Contact">
+      <End Role="Role" EntitySet="Roles" />
+      <End Role="Contact" EntitySet="Contacts" />
+    </AssociationSet>
+    <AssociationSet Name="School_SchoolPart" Association="LightSwitchApplication.School_SchoolPart">
+      <End Role="School" EntitySet="Schools" />
+      <End Role="SchoolPart" EntitySet="SchoolParts" />
+    </AssociationSet>
+    <AssociationSet Name="SchoolPart_Contact" Association="LightSwitchApplication.SchoolPart_Contact">
+      <End Role="SchoolPart" EntitySet="SchoolParts" />
+      <End Role="Contact" EntitySet="Contacts" />
+    </AssociationSet>
+    <AssociationSet Name="Activity_SchoolPart" Association="LightSwitchApplication.Activity_SchoolPart">
+      <End Role="SchoolPart" EntitySet="SchoolParts" />
+      <End Role="Activity" EntitySet="Activities" />
+    </AssociationSet>
+    <AssociationSet Name="Activity_Round" Association="LightSwitchApplication.Activity_Round">
+      <End Role="Activity" EntitySet="Activities" />
+      <End Role="Round" EntitySet="Rounds" />
+    </AssociationSet>
+    <AssociationSet Name="Activity_ActivityType" Association="LightSwitchApplication.Activity_ActivityType">
+      <End Role="ActivityType" EntitySet="ActivityTypes" />
+      <End Role="Activity" EntitySet="Activities" />
+    </AssociationSet>
+    <AssociationSet Name="TopicCollection_ActivityType" Association="LightSwitchApplication.TopicCollection_ActivityType">
+      <End Role="ActivityType" EntitySet="ActivityTypes" />
+      <End Role="TopicCollection" EntitySet="TopicCollections" />
+    </AssociationSet>
+    <AssociationSet Name="TopicCollection_Topic" Association="LightSwitchApplication.TopicCollection_Topic">
+      <End Role="TopicCollection" EntitySet="TopicCollections" />
+      <End Role="Topic" EntitySet="Topics" />
+    </AssociationSet>
+    <AssociationSet Name="SchoolPart_SchoolType" Association="LightSwitchApplication.SchoolPart_SchoolType">
+      <End Role="SchoolType" EntitySet="SchoolTypes" />
+      <End Role="SchoolPart" EntitySet="SchoolParts" />
+    </AssociationSet>
+    <AssociationSet Name="SchoolPart_City" Association="LightSwitchApplication.SchoolPart_City">
+      <End Role="City" EntitySet="Cities" />
+      <End Role="SchoolPart" EntitySet="SchoolParts" />
+    </AssociationSet>
+    <AssociationSet Name="Counselor_City" Association="LightSwitchApplication.Counselor_City">
+      <End Role="City" EntitySet="Cities" />
+      <End Role="Counselor" EntitySet="Counselors" />
+    </AssociationSet>
+    <AssociationSet Name="ActivityCounselor_Activity" Association="LightSwitchApplication.ActivityCounselor_Activity">
+      <End Role="Activity" EntitySet="Activities" />
+      <End Role="ActivityCounselor" EntitySet="ActivityCounselors" />
+    </AssociationSet>
+    <AssociationSet Name="ActivityCounselor_Counselor" Association="LightSwitchApplication.ActivityCounselor_Counselor">
+      <End Role="Counselor" EntitySet="Counselors" />
+      <End Role="ActivityCounselor" EntitySet="ActivityCounselors" />
+    </AssociationSet>
+    <AssociationSet Name="SchoolPart_District" Association="LightSwitchApplication.SchoolPart_District">
+      <End Role="District" EntitySet="Districts" />
+      <End Role="SchoolPart" EntitySet="SchoolParts" />
+    </AssociationSet>
+    <AssociationSet Name="City_District" Association="LightSwitchApplication.City_District">
+      <End Role="District" EntitySet="Districts" />
+      <End Role="City" EntitySet="Cities" />
+    </AssociationSet>
+    <AssociationSet Name="Meeting_Audience" Association="LightSwitchApplication.Meeting_Audience">
+      <End Role="Audience" EntitySet="Audiences" />
+      <End Role="Meeting" EntitySet="Meetings" />
+    </AssociationSet>
+    <AssociationSet Name="Activity_Audience" Association="LightSwitchApplication.Activity_Audience">
+      <End Role="Audience" EntitySet="Audiences" />
+      <End Role="Activity" EntitySet="Activities" />
+    </AssociationSet>
+    <AssociationSet Name="Counselor_District" Association="LightSwitchApplication.Counselor_District">
+      <End Role="District" EntitySet="Districts" />
+      <End Role="Counselor" EntitySet="Counselors" />
+    </AssociationSet>
+    <AssociationSet Name="Activity_ActivityStatus" Association="LightSwitchApplication.Activity_ActivityStatus">
+      <End Role="ActivityStatus" EntitySet="ActivityStatus" />
+      <End Role="Activity" EntitySet="Activities" />
+    </AssociationSet>
+    <AssociationSet Name="Activity_District" Association="LightSwitchApplication.Activity_District">
+      <End Role="District" EntitySet="Districts" />
+      <End Role="Activity" EntitySet="Activities" />
+    </AssociationSet>
+    <AssociationSet Name="Partners_PartnerTypes" Association="LightSwitchApplication.Partners_PartnerTypes">
+      <End Role="PartnerTypes" EntitySet="PartnerTypes" />
+      <End Role="Partners" EntitySet="Partners" />
+    </AssociationSet>
+    <AssociationSet Name="PartnerSchools_Partners" Association="LightSwitchApplication.PartnerSchools_Partners">
+      <End Role="Partners" EntitySet="Partners" />
+      <End Role="PartnerSchools" EntitySet="PartnerSchools" />
+    </AssociationSet>
+    <AssociationSet Name="PartnerSchools_School" Association="LightSwitchApplication.PartnerSchools_School">
+      <End Role="School" EntitySet="Schools" />
+      <End Role="PartnerSchools" EntitySet="PartnerSchools" />
+    </AssociationSet>
+    <AssociationSet Name="Partners_PartnersGroups" Association="LightSwitchApplication.Partners_PartnersGroups">
+      <End Role="PartnersGroups" EntitySet="PartnersGroups" />
+      <End Role="Partners" EntitySet="Partners" />
+    </AssociationSet>
+    <AssociationSet Name="PartnerReportActivities_Activity" Association="LightSwitchApplication.PartnerReportActivities_Activity">
+      <End Role="Activity" EntitySet="Activities" />
+      <End Role="PartnerReportActivities" EntitySet="PartnersReportActivities" />
+    </AssociationSet>
+    <AssociationSet Name="PartnersReport_PartnerReportActivities" Association="LightSwitchApplication.PartnersReport_PartnerReportActivities">
+      <End Role="PartnersReport" EntitySet="PartnersReport" />
+      <End Role="PartnerReportActivities" EntitySet="PartnersReportActivities" />
+    </AssociationSet>
+    <AssociationSet Name="PartnersReport_SchoolPart" Association="LightSwitchApplication.PartnersReport_SchoolPart">
+      <End Role="SchoolPart" EntitySet="SchoolParts" />
+      <End Role="PartnersReport" EntitySet="PartnersReport" />
+    </AssociationSet>
+    <AssociationSet Name="Orders_SchoolPart" Association="LightSwitchApplication.Orders_SchoolPart">
+      <End Role="SchoolPart" EntitySet="SchoolParts" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="Orders_Contact" Association="LightSwitchApplication.Orders_Contact">
+      <End Role="Contact" EntitySet="Contacts" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="Orders_Audience" Association="LightSwitchApplication.Orders_Audience">
+      <End Role="Audience" EntitySet="Audiences" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="Orders_Topic" Association="LightSwitchApplication.Orders_Topic">
+      <End Role="Topic" EntitySet="Topics" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="PartnersReport_PartnersGroups" Association="LightSwitchApplication.PartnersReport_PartnersGroups">
+      <End Role="PartnersGroups" EntitySet="PartnersGroups" />
+      <End Role="PartnersReport" EntitySet="PartnersReport" />
+    </AssociationSet>
+    <AssociationSet Name="Orders_OrderClassesAndCounslers" Association="LightSwitchApplication.Orders_OrderClassesAndCounslers">
+      <End Role="OrderClassesAndCounslers" EntitySet="OrderClassesAndCounslersSet" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="OrderPropertiesWrapper_OrderProperties" Association="LightSwitchApplication.OrderPropertiesWrapper_OrderProperties">
+      <End Role="OrderPropertiesWrapper" EntitySet="OrderPropertiesWrappers" />
+      <End Role="OrderProperties" EntitySet="OrderProperties" />
+    </AssociationSet>
+    <AssociationSet Name="ActivityCounselorCommit_Activity" Association="LightSwitchApplication.ActivityCounselorCommit_Activity">
+      <End Role="Activity" EntitySet="Activities" />
+      <End Role="ActivityCounselorCommit" EntitySet="ActivityCounselorCommits" />
+    </AssociationSet>
+    <AssociationSet Name="ActivityCounselorCommit_Counselor" Association="LightSwitchApplication.ActivityCounselorCommit_Counselor">
+      <End Role="Counselor" EntitySet="Counselors" />
+      <End Role="ActivityCounselorCommit" EntitySet="ActivityCounselorCommits" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

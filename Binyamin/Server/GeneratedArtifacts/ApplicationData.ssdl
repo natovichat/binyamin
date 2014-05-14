@@ -1,0 +1,1092 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="ApplicationDataStore" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="ApplicationDataStore">
+    <EntitySet Name="Cities" EntityType="ApplicationDataStore.City" store:Type="Tables" Schema="dbo" Table="Cities" />
+    <EntitySet Name="Districts" EntityType="ApplicationDataStore.District" store:Type="Tables" Schema="dbo" Table="Districts" />
+    <EntitySet Name="ActivityTypes" EntityType="ApplicationDataStore.ActivityType" store:Type="Tables" Schema="dbo" Table="ActivityTypes" />
+    <EntitySet Name="Schools" EntityType="ApplicationDataStore.School" store:Type="Tables" Schema="dbo" Table="Schools" />
+    <EntitySet Name="SchoolParts" EntityType="ApplicationDataStore.SchoolPart" store:Type="Tables" Schema="dbo" Table="SchoolParts" />
+    <EntitySet Name="Activities" EntityType="ApplicationDataStore.Activity" store:Type="Tables" Schema="dbo" Table="Activities" />
+    <EntitySet Name="Topics" EntityType="ApplicationDataStore.Topic" store:Type="Tables" Schema="dbo" Table="Topics" />
+    <EntitySet Name="TopicCollections" EntityType="ApplicationDataStore.TopicCollection" store:Type="Tables" Schema="dbo" Table="TopicCollections" />
+    <EntitySet Name="Counselors" EntityType="ApplicationDataStore.Counselor" store:Type="Tables" Schema="dbo" Table="Counselors" />
+    <EntitySet Name="Roles" EntityType="ApplicationDataStore.Role" store:Type="Tables" Schema="dbo" Table="Roles" />
+    <EntitySet Name="SchoolTypes" EntityType="ApplicationDataStore.SchoolType" store:Type="Tables" Schema="dbo" Table="SchoolTypes" />
+    <EntitySet Name="Rounds" EntityType="ApplicationDataStore.Round" store:Type="Tables" Schema="dbo" Table="Rounds" />
+    <EntitySet Name="Meetings" EntityType="ApplicationDataStore.Meeting" store:Type="Tables" Schema="dbo" Table="Meetings" />
+    <EntitySet Name="Contacts" EntityType="ApplicationDataStore.Contact" store:Type="Tables" Schema="dbo" Table="Contacts" />
+    <EntitySet Name="ActivityCounselors" EntityType="ApplicationDataStore.ActivityCounselor" store:Type="Tables" Schema="dbo" Table="ActivityCounselors" />
+    <EntitySet Name="Audiences" EntityType="ApplicationDataStore.Audience" store:Type="Tables" Schema="dbo" Table="Audiences" />
+    <EntitySet Name="ActivityStatus" EntityType="ApplicationDataStore.ActivityStatus" store:Type="Tables" Schema="dbo" Table="ActivityStatus" />
+    <EntitySet Name="CRsSet" EntityType="ApplicationDataStore.CRs" store:Type="Tables" Schema="dbo" Table="CRsSet" />
+    <EntitySet Name="Partners" EntityType="ApplicationDataStore.Partners" store:Type="Tables" Schema="dbo" Table="Partners" />
+    <EntitySet Name="PartnerSchools" EntityType="ApplicationDataStore.PartnerSchools" store:Type="Tables" Schema="dbo" Table="PartnerSchools" />
+    <EntitySet Name="PartnersGroups" EntityType="ApplicationDataStore.PartnersGroups" store:Type="Tables" Schema="dbo" Table="PartnersGroups" />
+    <EntitySet Name="PartnerTypes" EntityType="ApplicationDataStore.PartnerTypes" store:Type="Tables" Schema="dbo" Table="PartnerTypes" />
+    <EntitySet Name="PartnersReport" EntityType="ApplicationDataStore.PartnersReport" store:Type="Tables" Schema="dbo" Table="PartnersReport" />
+    <EntitySet Name="PartnersReportActivities" EntityType="ApplicationDataStore.PartnerReportActivities" store:Type="Tables" Schema="dbo" Table="PartnersReportActivities" />
+    <EntitySet Name="Orders" EntityType="ApplicationDataStore.Orders" store:Type="Tables" Schema="dbo" Table="Orders" />
+    <EntitySet Name="Emails" EntityType="ApplicationDataStore.Emails" store:Type="Tables" Schema="dbo" Table="Emails" />
+    <EntitySet Name="UserPrefs" EntityType="ApplicationDataStore.UserPrefs" store:Type="Tables" Schema="dbo" Table="UserPrefs" />
+    <EntitySet Name="OrderClassesAndCounslersSet" EntityType="ApplicationDataStore.OrderClassesAndCounslers" store:Type="Tables" Schema="dbo" Table="OrderClassesAndCounslersSet" />
+    <EntitySet Name="OrderPropertiesWrappers" EntityType="ApplicationDataStore.OrderPropertiesWrapper" store:Type="Tables" Schema="dbo" Table="OrderPropertiesWrappers" />
+    <EntitySet Name="OrderProperties" EntityType="ApplicationDataStore.OrderProperties" store:Type="Tables" Schema="dbo" Table="OrderProperties" />
+    <EntitySet Name="ActivityCounselorCommits" EntityType="ApplicationDataStore.ActivityCounselorCommit" store:Type="Tables" Schema="dbo" Table="ActivityCounselorCommits" />
+    <AssociationSet Name="Meeting_Counselor" Association="ApplicationDataStore.Meeting_Counselor">
+      <End Role="Counselor" EntitySet="Counselors" />
+      <End Role="Meeting" EntitySet="Meetings" />
+    </AssociationSet>
+    <AssociationSet Name="Meeting_Topic" Association="ApplicationDataStore.Meeting_Topic">
+      <End Role="Topic" EntitySet="Topics" />
+      <End Role="Meeting" EntitySet="Meetings" />
+    </AssociationSet>
+    <AssociationSet Name="Round_Meeting" Association="ApplicationDataStore.Round_Meeting">
+      <End Role="Round" EntitySet="Rounds" />
+      <End Role="Meeting" EntitySet="Meetings" />
+    </AssociationSet>
+    <AssociationSet Name="Activity_Topic" Association="ApplicationDataStore.Activity_Topic">
+      <End Role="Topic" EntitySet="Topics" />
+      <End Role="Activity" EntitySet="Activities" />
+    </AssociationSet>
+    <AssociationSet Name="Activity_Contact" Association="ApplicationDataStore.Activity_Contact">
+      <End Role="Contact" EntitySet="Contacts" />
+      <End Role="Activity" EntitySet="Activities" />
+    </AssociationSet>
+    <AssociationSet Name="Role_Contact" Association="ApplicationDataStore.Role_Contact">
+      <End Role="Role" EntitySet="Roles" />
+      <End Role="Contact" EntitySet="Contacts" />
+    </AssociationSet>
+    <AssociationSet Name="School_SchoolPart" Association="ApplicationDataStore.School_SchoolPart">
+      <End Role="School" EntitySet="Schools" />
+      <End Role="SchoolPart" EntitySet="SchoolParts" />
+    </AssociationSet>
+    <AssociationSet Name="SchoolPart_Contact" Association="ApplicationDataStore.SchoolPart_Contact">
+      <End Role="SchoolPart" EntitySet="SchoolParts" />
+      <End Role="Contact" EntitySet="Contacts" />
+    </AssociationSet>
+    <AssociationSet Name="Activity_SchoolPart" Association="ApplicationDataStore.Activity_SchoolPart">
+      <End Role="SchoolPart" EntitySet="SchoolParts" />
+      <End Role="Activity" EntitySet="Activities" />
+    </AssociationSet>
+    <AssociationSet Name="Activity_Round" Association="ApplicationDataStore.Activity_Round">
+      <End Role="Activity" EntitySet="Activities" />
+      <End Role="Round" EntitySet="Rounds" />
+    </AssociationSet>
+    <AssociationSet Name="Activity_ActivityType" Association="ApplicationDataStore.Activity_ActivityType">
+      <End Role="ActivityType" EntitySet="ActivityTypes" />
+      <End Role="Activity" EntitySet="Activities" />
+    </AssociationSet>
+    <AssociationSet Name="TopicCollection_ActivityType" Association="ApplicationDataStore.TopicCollection_ActivityType">
+      <End Role="ActivityType" EntitySet="ActivityTypes" />
+      <End Role="TopicCollection" EntitySet="TopicCollections" />
+    </AssociationSet>
+    <AssociationSet Name="TopicCollection_Topic" Association="ApplicationDataStore.TopicCollection_Topic">
+      <End Role="TopicCollection" EntitySet="TopicCollections" />
+      <End Role="Topic" EntitySet="Topics" />
+    </AssociationSet>
+    <AssociationSet Name="SchoolPart_SchoolType" Association="ApplicationDataStore.SchoolPart_SchoolType">
+      <End Role="SchoolType" EntitySet="SchoolTypes" />
+      <End Role="SchoolPart" EntitySet="SchoolParts" />
+    </AssociationSet>
+    <AssociationSet Name="SchoolPart_City" Association="ApplicationDataStore.SchoolPart_City">
+      <End Role="City" EntitySet="Cities" />
+      <End Role="SchoolPart" EntitySet="SchoolParts" />
+    </AssociationSet>
+    <AssociationSet Name="Counselor_City" Association="ApplicationDataStore.Counselor_City">
+      <End Role="City" EntitySet="Cities" />
+      <End Role="Counselor" EntitySet="Counselors" />
+    </AssociationSet>
+    <AssociationSet Name="ActivityCounselor_Activity" Association="ApplicationDataStore.ActivityCounselor_Activity">
+      <End Role="Activity" EntitySet="Activities" />
+      <End Role="ActivityCounselor" EntitySet="ActivityCounselors" />
+    </AssociationSet>
+    <AssociationSet Name="ActivityCounselor_Counselor" Association="ApplicationDataStore.ActivityCounselor_Counselor">
+      <End Role="Counselor" EntitySet="Counselors" />
+      <End Role="ActivityCounselor" EntitySet="ActivityCounselors" />
+    </AssociationSet>
+    <AssociationSet Name="SchoolPart_District" Association="ApplicationDataStore.SchoolPart_District">
+      <End Role="District" EntitySet="Districts" />
+      <End Role="SchoolPart" EntitySet="SchoolParts" />
+    </AssociationSet>
+    <AssociationSet Name="City_District" Association="ApplicationDataStore.City_District">
+      <End Role="District" EntitySet="Districts" />
+      <End Role="City" EntitySet="Cities" />
+    </AssociationSet>
+    <AssociationSet Name="Meeting_Audience" Association="ApplicationDataStore.Meeting_Audience">
+      <End Role="Audience" EntitySet="Audiences" />
+      <End Role="Meeting" EntitySet="Meetings" />
+    </AssociationSet>
+    <AssociationSet Name="Activity_Audience" Association="ApplicationDataStore.Activity_Audience">
+      <End Role="Audience" EntitySet="Audiences" />
+      <End Role="Activity" EntitySet="Activities" />
+    </AssociationSet>
+    <AssociationSet Name="Counselor_District" Association="ApplicationDataStore.Counselor_District">
+      <End Role="District" EntitySet="Districts" />
+      <End Role="Counselor" EntitySet="Counselors" />
+    </AssociationSet>
+    <AssociationSet Name="Activity_ActivityStatus" Association="ApplicationDataStore.Activity_ActivityStatus">
+      <End Role="ActivityStatus" EntitySet="ActivityStatus" />
+      <End Role="Activity" EntitySet="Activities" />
+    </AssociationSet>
+    <AssociationSet Name="Activity_District" Association="ApplicationDataStore.Activity_District">
+      <End Role="District" EntitySet="Districts" />
+      <End Role="Activity" EntitySet="Activities" />
+    </AssociationSet>
+    <AssociationSet Name="Partners_PartnerTypes" Association="ApplicationDataStore.Partners_PartnerTypes">
+      <End Role="PartnerTypes" EntitySet="PartnerTypes" />
+      <End Role="Partners" EntitySet="Partners" />
+    </AssociationSet>
+    <AssociationSet Name="PartnerSchools_Partners" Association="ApplicationDataStore.PartnerSchools_Partners">
+      <End Role="Partners" EntitySet="Partners" />
+      <End Role="PartnerSchools" EntitySet="PartnerSchools" />
+    </AssociationSet>
+    <AssociationSet Name="PartnerSchools_School" Association="ApplicationDataStore.PartnerSchools_School">
+      <End Role="School" EntitySet="Schools" />
+      <End Role="PartnerSchools" EntitySet="PartnerSchools" />
+    </AssociationSet>
+    <AssociationSet Name="Partners_PartnersGroups" Association="ApplicationDataStore.Partners_PartnersGroups">
+      <End Role="PartnersGroups" EntitySet="PartnersGroups" />
+      <End Role="Partners" EntitySet="Partners" />
+    </AssociationSet>
+    <AssociationSet Name="PartnerReportActivities_Activity" Association="ApplicationDataStore.PartnerReportActivities_Activity">
+      <End Role="Activity" EntitySet="Activities" />
+      <End Role="PartnerReportActivities" EntitySet="PartnersReportActivities" />
+    </AssociationSet>
+    <AssociationSet Name="PartnersReport_PartnerReportActivities" Association="ApplicationDataStore.PartnersReport_PartnerReportActivities">
+      <End Role="PartnersReport" EntitySet="PartnersReport" />
+      <End Role="PartnerReportActivities" EntitySet="PartnersReportActivities" />
+    </AssociationSet>
+    <AssociationSet Name="PartnersReport_SchoolPart" Association="ApplicationDataStore.PartnersReport_SchoolPart">
+      <End Role="SchoolPart" EntitySet="SchoolParts" />
+      <End Role="PartnersReport" EntitySet="PartnersReport" />
+    </AssociationSet>
+    <AssociationSet Name="Orders_SchoolPart" Association="ApplicationDataStore.Orders_SchoolPart">
+      <End Role="SchoolPart" EntitySet="SchoolParts" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="Orders_Contact" Association="ApplicationDataStore.Orders_Contact">
+      <End Role="Contact" EntitySet="Contacts" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="Orders_Audience" Association="ApplicationDataStore.Orders_Audience">
+      <End Role="Audience" EntitySet="Audiences" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="Orders_Topic" Association="ApplicationDataStore.Orders_Topic">
+      <End Role="Topic" EntitySet="Topics" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="PartnersReport_PartnersGroups" Association="ApplicationDataStore.PartnersReport_PartnersGroups">
+      <End Role="PartnersGroups" EntitySet="PartnersGroups" />
+      <End Role="PartnersReport" EntitySet="PartnersReport" />
+    </AssociationSet>
+    <AssociationSet Name="Orders_OrderClassesAndCounslers" Association="ApplicationDataStore.Orders_OrderClassesAndCounslers">
+      <End Role="OrderClassesAndCounslers" EntitySet="OrderClassesAndCounslersSet" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="OrderPropertiesWrapper_OrderProperties" Association="ApplicationDataStore.OrderPropertiesWrapper_OrderProperties">
+      <End Role="OrderPropertiesWrapper" EntitySet="OrderPropertiesWrappers" />
+      <End Role="OrderProperties" EntitySet="OrderProperties" />
+    </AssociationSet>
+    <AssociationSet Name="ActivityCounselorCommit_Activity" Association="ApplicationDataStore.ActivityCounselorCommit_Activity">
+      <End Role="Activity" EntitySet="Activities" />
+      <End Role="ActivityCounselorCommit" EntitySet="ActivityCounselorCommits" />
+    </AssociationSet>
+    <AssociationSet Name="ActivityCounselorCommit_Counselor" Association="ApplicationDataStore.ActivityCounselorCommit_Counselor">
+      <End Role="Counselor" EntitySet="Counselors" />
+      <End Role="ActivityCounselorCommit" EntitySet="ActivityCounselorCommits" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="City">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+    <Property Name="City_District" Type="int" />
+  </EntityType>
+  <EntityType Name="District">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="ActivityType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="T" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="School">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Titel" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="SchoolPart">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SchoolName" Type="nvarchar" MaxLength="255" />
+    <Property Name="Adress" Type="nvarchar" MaxLength="255" />
+    <Property Name="PhoneNumber1" Type="nvarchar" MaxLength="255" />
+    <Property Name="PhoneNumber2" Type="nvarchar" MaxLength="255" />
+    <Property Name="FaxNumber" Type="nvarchar" MaxLength="255" />
+    <Property Name="Comments" Type="nvarchar" MaxLength="255" />
+    <Property Name="SchoolMapLink" Type="nvarchar" MaxLength="1024" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+    <Property Name="School_SchoolPart" Type="int" Nullable="false" />
+    <Property Name="SchoolPart_SchoolType" Type="int" />
+    <Property Name="SchoolPart_City" Type="int" />
+    <Property Name="SchoolPart_District" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Activity">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ActivityDate" Type="datetime" Nullable="false" />
+    <Property Name="Comments" Type="nvarchar" MaxLength="255" />
+    <Property Name="NumberOfCounselor" Type="int" Nullable="false" />
+    <Property Name="TotalNumberOfClasses" Type="int" Nullable="false" />
+    <Property Name="NumberOfRounds" Type="int" Nullable="false" />
+    <Property Name="OrderComments" Type="nvarchar" MaxLength="255" />
+    <Property Name="StartTime" Type="datetime" Nullable="false" />
+    <Property Name="EndTime" Type="datetime" Nullable="false" />
+    <Property Name="IsOpenForCounselorsCommit" Type="bit" Nullable="false" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+    <Property Name="Activity_Topic" Type="int" />
+    <Property Name="Activity_Contact" Type="int" />
+    <Property Name="Activity_SchoolPart" Type="int" />
+    <Property Name="Activity_ActivityType" Type="int" />
+    <Property Name="Activity_Audience" Type="int" />
+    <Property Name="Activity_ActivityStatus" Type="int" Nullable="false" />
+    <Property Name="Activity_District" Type="int" />
+  </EntityType>
+  <EntityType Name="Topic">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+    <Property Name="TopicCollection_Topic" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TopicCollection">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+    <Property Name="TopicCollection_ActivityType" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Counselor">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="255" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="255" />
+    <Property Name="Email" Type="nvarchar" MaxLength="255" />
+    <Property Name="PhoneNumber1" Type="nvarchar" MaxLength="255" />
+    <Property Name="PhoneNumber2" Type="nvarchar" MaxLength="255" />
+    <Property Name="Comments" Type="nvarchar" MaxLength="255" />
+    <Property Name="Adress" Type="nvarchar" MaxLength="255" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="MaxAcitivitiesPerYear" Type="int" />
+    <Property Name="Username" Type="nvarchar" MaxLength="255" />
+    <Property Name="Password" Type="nvarchar" MaxLength="255" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+    <Property Name="Counselor_City" Type="int" />
+    <Property Name="Counselor_District" Type="int" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="SchoolType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="Round">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="StartTime" Type="datetime" />
+    <Property Name="StopTime" Type="datetime" />
+    <Property Name="NumberOfStudentInMeeting" Type="int" Nullable="false" />
+    <Property Name="NumberOfMeetingsInRound" Type="int" Nullable="false" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+    <Property Name="Activity_Round" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Meeting">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ClassNumber" Type="int" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+    <Property Name="Meeting_Counselor" Type="int" />
+    <Property Name="Meeting_Topic" Type="int" />
+    <Property Name="Round_Meeting" Type="int" Nullable="false" />
+    <Property Name="Meeting_Audience" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Contact">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FullName" Type="nvarchar" MaxLength="255" />
+    <Property Name="PhoneNumber1" Type="nvarchar" MaxLength="255" />
+    <Property Name="PhoneNumber2" Type="nvarchar" MaxLength="255" />
+    <Property Name="Email" Type="nvarchar" MaxLength="255" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+    <Property Name="Role_Contact" Type="int" />
+    <Property Name="SchoolPart_Contact" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ActivityCounselor">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CounselorAnswer" Type="nvarchar" MaxLength="255" />
+    <Property Name="Assigned" Type="bit" Nullable="false" />
+    <Property Name="AsPermanent" Type="bit" Nullable="false" />
+    <Property Name="NumberOfRound" Type="int" Nullable="false" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+    <Property Name="ActivityCounselor_Activity" Type="int" Nullable="false" />
+    <Property Name="ActivityCounselor_Counselor" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Audience">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="ActivityStatus">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="InternalId" Type="int" Nullable="false" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="CRs">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Description" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Status" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Prioraty" Type="nvarchar" MaxLength="255" />
+    <Property Name="DateOfReolved" Type="datetime" />
+    <Property Name="Type" Type="nvarchar" MaxLength="255" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="Partners">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="255" />
+    <Property Name="Address" Type="nvarchar" MaxLength="255" />
+    <Property Name="Email" Type="nvarchar" MaxLength="255" />
+    <Property Name="PhoneNumber" Type="nvarchar" MaxLength="255" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+    <Property Name="Partners_PartnerTypes" Type="int" Nullable="false" />
+    <Property Name="Partners_PartnersGroups" Type="int" />
+  </EntityType>
+  <EntityType Name="PartnerSchools">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+    <Property Name="PartnerSchools_Partners" Type="int" Nullable="false" />
+    <Property Name="PartnerSchools_School" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PartnersGroups">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="MoreDetails" Type="nvarchar" MaxLength="255" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="PartnerTypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="MoreDetails" Type="nvarchar" MaxLength="255" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="PartnersReport">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Img1" Type="nvarchar" MaxLength="1000" />
+    <Property Name="HeightImg1" Type="int" />
+    <Property Name="WidthImg1" Type="int" />
+    <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Img2" Type="nvarchar" MaxLength="1000" />
+    <Property Name="HeightImg2" Type="int" />
+    <Property Name="WidthImg2" Type="int" />
+    <Property Name="Img3" Type="nvarchar" MaxLength="1000" />
+    <Property Name="HeightImg3" Type="int" />
+    <Property Name="WidthImg3" Type="int" />
+    <Property Name="StartDate" Type="datetime" Nullable="false" />
+    <Property Name="EndDate" Type="datetime" Nullable="false" />
+    <Property Name="Img4" Type="nvarchar" MaxLength="1000" />
+    <Property Name="HeightImg4" Type="int" />
+    <Property Name="WidthImg4" Type="int" />
+    <Property Name="Text" Type="nvarchar" MaxLength="255" />
+    <Property Name="Img5" Type="nvarchar" MaxLength="1000" />
+    <Property Name="HeightImg5" Type="int" />
+    <Property Name="WidthImg5" Type="int" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+    <Property Name="PartnersReport_SchoolPart" Type="int" Nullable="false" />
+    <Property Name="PartnersReport_PartnersGroups" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PartnerReportActivities">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+    <Property Name="PartnerReportActivities_Activity" Type="int" Nullable="false" />
+    <Property Name="PartnersReport_PartnerReportActivities" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Orders">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Email" Type="nvarchar" MaxLength="255" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="255" />
+    <Property Name="RoundsNumber" Type="int" Nullable="false" />
+    <Property Name="DT1" Type="datetime" />
+    <Property Name="DT2" Type="datetime" />
+    <Property Name="DT3" Type="datetime" />
+    <Property Name="Comment" Type="nvarchar" MaxLength="255" />
+    <Property Name="Approved" Type="bit" />
+    <Property Name="ChosenDate" Type="datetime" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+    <Property Name="Order_SchoolPart" Type="int" Nullable="false" />
+    <Property Name="Order_Contact" Type="int" Nullable="false" />
+    <Property Name="Order_Audience" Type="int" Nullable="false" />
+    <Property Name="Orders_Topic" Type="int" Nullable="false" />
+    <Property Name="Orders_OrderClassesAndCounslers" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Emails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Sender" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Receiver" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Subject" Type="nvarchar" MaxLength="1024" />
+    <Property Name="Message" Type="nvarchar" MaxLength="4000" />
+    <Property Name="ReceiverMail" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="UserPrefs">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="MailAddress" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Password" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Server" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Port" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="SSL" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="CreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="DisaplayName" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="rePassword" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="OrderClassesAndCounslers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ClassesNumber" Type="int" Nullable="false" />
+    <Property Name="CounslerNumber" Type="int" Nullable="false" />
+    <Property Name="Price" Type="int" Nullable="false" />
+    <Property Name="Summary" Type="nvarchar" MaxLength="1000" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="OrderPropertiesWrapper">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ClassesAmount" Type="int" Nullable="false" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="OrderProperties">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CounslersAmount" Type="int" Nullable="false" />
+    <Property Name="Price" Type="int" Nullable="false" />
+    <Property Name="ActivityDuration" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+    <Property Name="OrderPropertiesWrapper_OrderProperties" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ActivityCounselorCommit">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+    <Property Name="ActivityCounselorCommit_Activity" Type="int" Nullable="false" />
+    <Property Name="ActivityCounselorCommit_Counselor" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="Meeting_Counselor">
+    <End Role="Counselor" Type="ApplicationDataStore.Counselor" Multiplicity="0..1" />
+    <End Role="Meeting" Type="ApplicationDataStore.Meeting" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Counselor">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Meeting">
+        <PropertyRef Name="Meeting_Counselor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Meeting_Topic">
+    <End Role="Topic" Type="ApplicationDataStore.Topic" Multiplicity="0..1" />
+    <End Role="Meeting" Type="ApplicationDataStore.Meeting" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Topic">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Meeting">
+        <PropertyRef Name="Meeting_Topic" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Round_Meeting">
+    <End Role="Round" Type="ApplicationDataStore.Round" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Meeting" Type="ApplicationDataStore.Meeting" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Round">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Meeting">
+        <PropertyRef Name="Round_Meeting" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Activity_Topic">
+    <End Role="Topic" Type="ApplicationDataStore.Topic" Multiplicity="0..1" />
+    <End Role="Activity" Type="ApplicationDataStore.Activity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Topic">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Activity">
+        <PropertyRef Name="Activity_Topic" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Activity_Contact">
+    <End Role="Contact" Type="ApplicationDataStore.Contact" Multiplicity="0..1" />
+    <End Role="Activity" Type="ApplicationDataStore.Activity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Contact">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Activity">
+        <PropertyRef Name="Activity_Contact" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Role_Contact">
+    <End Role="Role" Type="ApplicationDataStore.Role" Multiplicity="0..1" />
+    <End Role="Contact" Type="ApplicationDataStore.Contact" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Contact">
+        <PropertyRef Name="Role_Contact" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="School_SchoolPart">
+    <End Role="School" Type="ApplicationDataStore.School" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="SchoolPart" Type="ApplicationDataStore.SchoolPart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="School">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SchoolPart">
+        <PropertyRef Name="School_SchoolPart" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SchoolPart_Contact">
+    <End Role="SchoolPart" Type="ApplicationDataStore.SchoolPart" Multiplicity="1" />
+    <End Role="Contact" Type="ApplicationDataStore.Contact" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SchoolPart">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Contact">
+        <PropertyRef Name="SchoolPart_Contact" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Activity_SchoolPart">
+    <End Role="SchoolPart" Type="ApplicationDataStore.SchoolPart" Multiplicity="0..1" />
+    <End Role="Activity" Type="ApplicationDataStore.Activity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SchoolPart">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Activity">
+        <PropertyRef Name="Activity_SchoolPart" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Activity_Round">
+    <End Role="Activity" Type="ApplicationDataStore.Activity" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Round" Type="ApplicationDataStore.Round" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Activity">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Round">
+        <PropertyRef Name="Activity_Round" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Activity_ActivityType">
+    <End Role="ActivityType" Type="ApplicationDataStore.ActivityType" Multiplicity="0..1" />
+    <End Role="Activity" Type="ApplicationDataStore.Activity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ActivityType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Activity">
+        <PropertyRef Name="Activity_ActivityType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TopicCollection_ActivityType">
+    <End Role="ActivityType" Type="ApplicationDataStore.ActivityType" Multiplicity="1" />
+    <End Role="TopicCollection" Type="ApplicationDataStore.TopicCollection" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ActivityType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TopicCollection">
+        <PropertyRef Name="TopicCollection_ActivityType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="TopicCollection_Topic">
+    <End Role="TopicCollection" Type="ApplicationDataStore.TopicCollection" Multiplicity="1" />
+    <End Role="Topic" Type="ApplicationDataStore.Topic" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TopicCollection">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Topic">
+        <PropertyRef Name="TopicCollection_Topic" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SchoolPart_SchoolType">
+    <End Role="SchoolType" Type="ApplicationDataStore.SchoolType" Multiplicity="0..1" />
+    <End Role="SchoolPart" Type="ApplicationDataStore.SchoolPart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SchoolType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SchoolPart">
+        <PropertyRef Name="SchoolPart_SchoolType" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SchoolPart_City">
+    <End Role="City" Type="ApplicationDataStore.City" Multiplicity="0..1" />
+    <End Role="SchoolPart" Type="ApplicationDataStore.SchoolPart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="City">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SchoolPart">
+        <PropertyRef Name="SchoolPart_City" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Counselor_City">
+    <End Role="City" Type="ApplicationDataStore.City" Multiplicity="0..1" />
+    <End Role="Counselor" Type="ApplicationDataStore.Counselor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="City">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Counselor">
+        <PropertyRef Name="Counselor_City" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ActivityCounselor_Activity">
+    <End Role="Activity" Type="ApplicationDataStore.Activity" Multiplicity="1" />
+    <End Role="ActivityCounselor" Type="ApplicationDataStore.ActivityCounselor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Activity">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ActivityCounselor">
+        <PropertyRef Name="ActivityCounselor_Activity" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ActivityCounselor_Counselor">
+    <End Role="Counselor" Type="ApplicationDataStore.Counselor" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ActivityCounselor" Type="ApplicationDataStore.ActivityCounselor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Counselor">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ActivityCounselor">
+        <PropertyRef Name="ActivityCounselor_Counselor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="SchoolPart_District">
+    <End Role="District" Type="ApplicationDataStore.District" Multiplicity="1" />
+    <End Role="SchoolPart" Type="ApplicationDataStore.SchoolPart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="District">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="SchoolPart">
+        <PropertyRef Name="SchoolPart_District" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="City_District">
+    <End Role="District" Type="ApplicationDataStore.District" Multiplicity="0..1" />
+    <End Role="City" Type="ApplicationDataStore.City" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="District">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="City">
+        <PropertyRef Name="City_District" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Meeting_Audience">
+    <End Role="Audience" Type="ApplicationDataStore.Audience" Multiplicity="1" />
+    <End Role="Meeting" Type="ApplicationDataStore.Meeting" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Audience">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Meeting">
+        <PropertyRef Name="Meeting_Audience" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Activity_Audience">
+    <End Role="Audience" Type="ApplicationDataStore.Audience" Multiplicity="0..1" />
+    <End Role="Activity" Type="ApplicationDataStore.Activity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Audience">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Activity">
+        <PropertyRef Name="Activity_Audience" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Counselor_District">
+    <End Role="District" Type="ApplicationDataStore.District" Multiplicity="0..1" />
+    <End Role="Counselor" Type="ApplicationDataStore.Counselor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="District">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Counselor">
+        <PropertyRef Name="Counselor_District" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Activity_ActivityStatus">
+    <End Role="ActivityStatus" Type="ApplicationDataStore.ActivityStatus" Multiplicity="1" />
+    <End Role="Activity" Type="ApplicationDataStore.Activity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ActivityStatus">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Activity">
+        <PropertyRef Name="Activity_ActivityStatus" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Activity_District">
+    <End Role="District" Type="ApplicationDataStore.District" Multiplicity="0..1" />
+    <End Role="Activity" Type="ApplicationDataStore.Activity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="District">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Activity">
+        <PropertyRef Name="Activity_District" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Partners_PartnerTypes">
+    <End Role="PartnerTypes" Type="ApplicationDataStore.PartnerTypes" Multiplicity="1" />
+    <End Role="Partners" Type="ApplicationDataStore.Partners" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PartnerTypes">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Partners">
+        <PropertyRef Name="Partners_PartnerTypes" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PartnerSchools_Partners">
+    <End Role="Partners" Type="ApplicationDataStore.Partners" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="PartnerSchools" Type="ApplicationDataStore.PartnerSchools" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Partners">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PartnerSchools">
+        <PropertyRef Name="PartnerSchools_Partners" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PartnerSchools_School">
+    <End Role="School" Type="ApplicationDataStore.School" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="PartnerSchools" Type="ApplicationDataStore.PartnerSchools" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="School">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PartnerSchools">
+        <PropertyRef Name="PartnerSchools_School" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Partners_PartnersGroups">
+    <End Role="PartnersGroups" Type="ApplicationDataStore.PartnersGroups" Multiplicity="0..1" />
+    <End Role="Partners" Type="ApplicationDataStore.Partners" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PartnersGroups">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Partners">
+        <PropertyRef Name="Partners_PartnersGroups" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PartnerReportActivities_Activity">
+    <End Role="Activity" Type="ApplicationDataStore.Activity" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="PartnerReportActivities" Type="ApplicationDataStore.PartnerReportActivities" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Activity">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PartnerReportActivities">
+        <PropertyRef Name="PartnerReportActivities_Activity" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PartnersReport_PartnerReportActivities">
+    <End Role="PartnersReport" Type="ApplicationDataStore.PartnersReport" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="PartnerReportActivities" Type="ApplicationDataStore.PartnerReportActivities" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PartnersReport">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PartnerReportActivities">
+        <PropertyRef Name="PartnersReport_PartnerReportActivities" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PartnersReport_SchoolPart">
+    <End Role="SchoolPart" Type="ApplicationDataStore.SchoolPart" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="PartnersReport" Type="ApplicationDataStore.PartnersReport" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SchoolPart">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PartnersReport">
+        <PropertyRef Name="PartnersReport_SchoolPart" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Orders_SchoolPart">
+    <End Role="SchoolPart" Type="ApplicationDataStore.SchoolPart" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Orders" Type="ApplicationDataStore.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SchoolPart">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="Order_SchoolPart" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Orders_Contact">
+    <End Role="Contact" Type="ApplicationDataStore.Contact" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Orders" Type="ApplicationDataStore.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Contact">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="Order_Contact" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Orders_Audience">
+    <End Role="Audience" Type="ApplicationDataStore.Audience" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Orders" Type="ApplicationDataStore.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Audience">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="Order_Audience" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Orders_Topic">
+    <End Role="Topic" Type="ApplicationDataStore.Topic" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Orders" Type="ApplicationDataStore.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Topic">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="Orders_Topic" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PartnersReport_PartnersGroups">
+    <End Role="PartnersGroups" Type="ApplicationDataStore.PartnersGroups" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="PartnersReport" Type="ApplicationDataStore.PartnersReport" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PartnersGroups">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PartnersReport">
+        <PropertyRef Name="PartnersReport_PartnersGroups" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Orders_OrderClassesAndCounslers">
+    <End Role="OrderClassesAndCounslers" Type="ApplicationDataStore.OrderClassesAndCounslers" Multiplicity="1" />
+    <End Role="Orders" Type="ApplicationDataStore.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrderClassesAndCounslers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="Orders_OrderClassesAndCounslers" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="OrderPropertiesWrapper_OrderProperties">
+    <End Role="OrderPropertiesWrapper" Type="ApplicationDataStore.OrderPropertiesWrapper" Multiplicity="1" />
+    <End Role="OrderProperties" Type="ApplicationDataStore.OrderProperties" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OrderPropertiesWrapper">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="OrderProperties">
+        <PropertyRef Name="OrderPropertiesWrapper_OrderProperties" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ActivityCounselorCommit_Activity">
+    <End Role="Activity" Type="ApplicationDataStore.Activity" Multiplicity="1" />
+    <End Role="ActivityCounselorCommit" Type="ApplicationDataStore.ActivityCounselorCommit" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Activity">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ActivityCounselorCommit">
+        <PropertyRef Name="ActivityCounselorCommit_Activity" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ActivityCounselorCommit_Counselor">
+    <End Role="Counselor" Type="ApplicationDataStore.Counselor" Multiplicity="1" />
+    <End Role="ActivityCounselorCommit" Type="ApplicationDataStore.ActivityCounselorCommit" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Counselor">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ActivityCounselorCommit">
+        <PropertyRef Name="ActivityCounselorCommit_Counselor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

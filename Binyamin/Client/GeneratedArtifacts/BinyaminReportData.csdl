@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" Namespace="LightSwitchApplication" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityType Name="ActivityView">
+    <Key>
+      <PropertyRef Name="ActivityId" />
+    </Key>
+    <Property Name="ActivityId" Type="Edm.Int32" Nullable="false" />
+    <Property Name="SchoolName" Type="Edm.String" MaxLength="Max" ConcurrencyMode="Fixed" />
+    <Property Name="ActivityDate" Type="Edm.DateTime" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="SchoolPartName" Type="Edm.String" MaxLength="Max" ConcurrencyMode="Fixed" />
+    <Property Name="TopicCollection" Type="Edm.String" MaxLength="Max" ConcurrencyMode="Fixed" />
+    <Property Name="Topic" Type="Edm.String" MaxLength="Max" ConcurrencyMode="Fixed" />
+    <Property Name="TotalNumberOfClasses" Type="Edm.Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="TotalNumberOfCounselor" Type="Edm.Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="TotalNumberOfRounds" Type="Edm.Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="Comments" Type="Edm.String" MaxLength="Max" ConcurrencyMode="Fixed" />
+    <Property Name="ActivityPlace" Type="Edm.String" MaxLength="Max" ConcurrencyMode="Fixed" />
+    <Property Name="District" Type="Edm.String" MaxLength="Max" ConcurrencyMode="Fixed" />
+    <Property Name="ActivityStatusId" Type="Edm.String" MaxLength="Max" ConcurrencyMode="Fixed" />
+    <Property Name="ActivityType" Type="Edm.String" MaxLength="Max" ConcurrencyMode="Fixed" />
+    <Property Name="SchoolType" Type="Edm.String" MaxLength="Max" ConcurrencyMode="Fixed" />
+    <Property Name="Contact" Type="Edm.String" MaxLength="Max" ConcurrencyMode="Fixed" />
+    <Property Name="Audience" Type="Edm.String" MaxLength="Max" ConcurrencyMode="Fixed" />
+    <Property Name="DistrictId" Type="Edm.Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="ContactPhone" Type="Edm.String" MaxLength="Max" ConcurrencyMode="Fixed" />
+    <Property Name="CounselorInActivity" Type="Edm.String" MaxLength="Max" ConcurrencyMode="Fixed" />
+    <Property Name="NumberOfAssigedCounselor" Type="Edm.Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="IsMissingCounselors" Type="Edm.Boolean" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="StartTime" Type="Edm.DateTime" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="EndTime" Type="Edm.DateTime" Nullable="false" ConcurrencyMode="Fixed" />
+  </EntityType>
+  <EntityType Name="SchoolView">
+    <Key>
+      <PropertyRef Name="SchoolId" />
+    </Key>
+    <Property Name="SchoolId" Type="Edm.Int32" Nullable="false" />
+    <Property Name="SchoolFullName" Type="Edm.String" MaxLength="Max" ConcurrencyMode="Fixed" />
+  </EntityType>
+  <EntityType Name="ReportSchoolView">
+    <Key>
+      <PropertyRef Name="ActivityId" />
+    </Key>
+    <Property Name="ActivityId" Type="Edm.Int32" Nullable="false" />
+    <Property Name="SchoolPartId" Type="Edm.Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="SchoolName" Type="Edm.String" MaxLength="Max" ConcurrencyMode="Fixed" />
+    <Property Name="SchoolPartName" Type="Edm.String" MaxLength="Max" ConcurrencyMode="Fixed" />
+    <Property Name="TopicCollection" Type="Edm.String" MaxLength="Max" ConcurrencyMode="Fixed" />
+    <Property Name="Topic" Type="Edm.String" MaxLength="Max" ConcurrencyMode="Fixed" />
+    <Property Name="TotalNumberOfClasses" Type="Edm.Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="TotalNumberOfCounselor" Type="Edm.Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="TotalNumberOfRounds" Type="Edm.Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="Comments" Type="Edm.String" MaxLength="Max" ConcurrencyMode="Fixed" />
+    <Property Name="ActivityPlace" Type="Edm.String" MaxLength="Max" ConcurrencyMode="Fixed" />
+    <Property Name="District" Type="Edm.String" MaxLength="Max" ConcurrencyMode="Fixed" />
+    <Property Name="ActivityStatus" Type="Edm.String" MaxLength="Max" ConcurrencyMode="Fixed" />
+    <Property Name="ActivityDate" Type="Edm.DateTime" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="ActivityType" Type="Edm.String" MaxLength="Max" ConcurrencyMode="Fixed" />
+    <Property Name="SchoolType" Type="Edm.String" MaxLength="Max" ConcurrencyMode="Fixed" />
+    <Property Name="Contact" Type="Edm.String" MaxLength="Max" ConcurrencyMode="Fixed" />
+    <Property Name="Audience" Type="Edm.String" MaxLength="Max" ConcurrencyMode="Fixed" />
+    <Property Name="ContactPhone" Type="Edm.String" MaxLength="Max" ConcurrencyMode="Fixed" />
+    <Property Name="DistrictId" Type="Edm.Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="CounselorInActivity" Type="Edm.String" MaxLength="Max" ConcurrencyMode="Fixed" />
+    <Property Name="NumberOfAssigedCounselor" Type="Edm.Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="IsMissingCounselors" Type="Edm.Boolean" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="StartTime" Type="Edm.DateTime" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="EndTime" Type="Edm.DateTime" Nullable="false" ConcurrencyMode="Fixed" />
+  </EntityType>
+  <EntityType Name="LectureView">
+    <Key>
+      <PropertyRef Name="ActivityTopic" />
+    </Key>
+    <Property Name="ActivityTopic" Type="Edm.String" Nullable="false" MaxLength="Max" />
+    <Property Name="NumberOfActivities" Type="Edm.Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="NumberOfCounselors" Type="Edm.Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="NumberOfClasses" Type="Edm.Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="ActivityType" Type="Edm.String" MaxLength="Max" ConcurrencyMode="Fixed" />
+    <Property Name="ActivityTopicCollection" Type="Edm.String" MaxLength="Max" ConcurrencyMode="Fixed" />
+    <Property Name="NumberOfRounds" Type="Edm.Int32" Nullable="false" ConcurrencyMode="Fixed" />
+  </EntityType>
+  <EntityType Name="CounselorView">
+    <Key>
+      <PropertyRef Name="ActivityId" />
+    </Key>
+    <Property Name="CounselorInActivity" Type="Edm.String" MaxLength="Max" ConcurrencyMode="Fixed" />
+    <Property Name="TopicCollection" Type="Edm.String" MaxLength="Max" ConcurrencyMode="Fixed" />
+    <Property Name="Topic" Type="Edm.String" MaxLength="Max" ConcurrencyMode="Fixed" />
+    <Property Name="SchoolName" Type="Edm.String" MaxLength="Max" ConcurrencyMode="Fixed" />
+    <Property Name="SchoolPartName" Type="Edm.String" MaxLength="Max" ConcurrencyMode="Fixed" />
+    <Property Name="ActivityPlace" Type="Edm.String" MaxLength="Max" ConcurrencyMode="Fixed" />
+    <Property Name="ActivityDate" Type="Edm.DateTime" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="Audience" Type="Edm.String" MaxLength="Max" ConcurrencyMode="Fixed" />
+    <Property Name="ActivityId" Type="Edm.Int32" Nullable="false" />
+    <Property Name="Month" Type="Edm.Int32" Nullable="false" ConcurrencyMode="Fixed" />
+  </EntityType>
+  <EntityType Name="frequencyView">
+    <Key>
+      <PropertyRef Name="SchoolName" />
+    </Key>
+    <Property Name="SchoolName" Type="Edm.String" Nullable="false" MaxLength="Max" />
+    <Property Name="frequencyNum" Type="Edm.Int32" Nullable="false" ConcurrencyMode="Fixed" />
+  </EntityType>
+  <EntityType Name="SummaryYear">
+    <Key>
+      <PropertyRef Name="TotalNumberOfClasses" />
+    </Key>
+    <Property Name="TotalNumberOfClasses" Type="Edm.Int32" Nullable="false" />
+    <Property Name="TotalNumberOfCounselor" Type="Edm.Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="NumOfLectures" Type="Edm.Int32" Nullable="false" ConcurrencyMode="Fixed" />
+    <Property Name="ActivityDate" Type="Edm.Int32" Nullable="false" ConcurrencyMode="Fixed" />
+  </EntityType>
+  <EntityContainer Name="BinyaminReportDataObjectContext" m:IsDefaultEntityContainer="true">
+    <EntitySet Name="ActivityViews" EntityType="LightSwitchApplication.ActivityView" />
+    <EntitySet Name="SchoolViews" EntityType="LightSwitchApplication.SchoolView" />
+    <EntitySet Name="ReportSchoolViews" EntityType="LightSwitchApplication.ReportSchoolView" />
+    <EntitySet Name="LectureViews" EntityType="LightSwitchApplication.LectureView" />
+    <EntitySet Name="CounselorViews" EntityType="LightSwitchApplication.CounselorView" />
+    <EntitySet Name="frequencyViews" EntityType="LightSwitchApplication.frequencyView" />
+    <EntitySet Name="SummaryYears" EntityType="LightSwitchApplication.SummaryYear" />
+  </EntityContainer>
+</Schema>

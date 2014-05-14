@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping CdmEntityContainer="BinyaminReportDataObjectContext" StorageEntityContainer="BinyaminReportDataStore">
+    <EntitySetMapping Name="ActivityViews">
+      <EntityTypeMapping TypeName="IsTypeOf(LightSwitchApplication.ActivityView)">
+        <MappingFragment StoreEntitySet="GetActivity">
+          <ScalarProperty Name="ActivityId" ColumnName="ActivityId" />
+          <ScalarProperty Name="SchoolName" ColumnName="SchoolName" />
+          <ScalarProperty Name="ActivityDate" ColumnName="ActivityDate" />
+          <ScalarProperty Name="SchoolPartName" ColumnName="SchoolPartName" />
+          <ScalarProperty Name="TopicCollection" ColumnName="TopicCollection" />
+          <ScalarProperty Name="Topic" ColumnName="Topic" />
+          <ScalarProperty Name="TotalNumberOfClasses" ColumnName="TotalNumberOfClasses" />
+          <ScalarProperty Name="TotalNumberOfCounselor" ColumnName="TotalNumberOfCounselor" />
+          <ScalarProperty Name="TotalNumberOfRounds" ColumnName="TotalNumberOfRounds" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="ActivityPlace" ColumnName="ActivityPlace" />
+          <ScalarProperty Name="District" ColumnName="District" />
+          <ScalarProperty Name="ActivityStatusId" ColumnName="ActivityStatus" />
+          <ScalarProperty Name="ActivityType" ColumnName="ActivityType" />
+          <ScalarProperty Name="SchoolType" ColumnName="SchoolType" />
+          <ScalarProperty Name="Contact" ColumnName="Contact" />
+          <ScalarProperty Name="Audience" ColumnName="Audience" />
+          <ScalarProperty Name="DistrictId" ColumnName="DistrictId" />
+          <ScalarProperty Name="ContactPhone" ColumnName="ContactPhone" />
+          <ScalarProperty Name="CounselorInActivity" ColumnName="CounselorInActivity" />
+          <ScalarProperty Name="NumberOfAssigedCounselor" ColumnName="NumberOfAssigedCounselor" />
+          <ScalarProperty Name="IsMissingCounselors" ColumnName="IsMissingCounselors" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SchoolViews">
+      <EntityTypeMapping TypeName="IsTypeOf(LightSwitchApplication.SchoolView)">
+        <MappingFragment StoreEntitySet="GetSchools">
+          <ScalarProperty Name="SchoolId" ColumnName="SchoolId" />
+          <ScalarProperty Name="SchoolFullName" ColumnName="SchoolFullName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ReportSchoolViews">
+      <EntityTypeMapping TypeName="IsTypeOf(LightSwitchApplication.ReportSchoolView)">
+        <MappingFragment StoreEntitySet="GetReportSchoolView">
+          <ScalarProperty Name="ActivityId" ColumnName="ActivityId" />
+          <ScalarProperty Name="SchoolPartId" ColumnName="SchoolPartId" />
+          <ScalarProperty Name="SchoolName" ColumnName="SchoolName" />
+          <ScalarProperty Name="SchoolPartName" ColumnName="SchoolPartName" />
+          <ScalarProperty Name="TopicCollection" ColumnName="TopicCollection" />
+          <ScalarProperty Name="Topic" ColumnName="Topic" />
+          <ScalarProperty Name="TotalNumberOfClasses" ColumnName="TotalNumberOfClasses" />
+          <ScalarProperty Name="TotalNumberOfCounselor" ColumnName="TotalNumberOfCounselor" />
+          <ScalarProperty Name="TotalNumberOfRounds" ColumnName="TotalNumberOfRounds" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="ActivityPlace" ColumnName="ActivityPlace" />
+          <ScalarProperty Name="District" ColumnName="District" />
+          <ScalarProperty Name="ActivityStatus" ColumnName="ActivityStatus" />
+          <ScalarProperty Name="ActivityDate" ColumnName="ActivityDate" />
+          <ScalarProperty Name="ActivityType" ColumnName="ActivityType" />
+          <ScalarProperty Name="SchoolType" ColumnName="SchoolType" />
+          <ScalarProperty Name="Contact" ColumnName="Contact" />
+          <ScalarProperty Name="Audience" ColumnName="Audience" />
+          <ScalarProperty Name="ContactPhone" ColumnName="ContactPhone" />
+          <ScalarProperty Name="DistrictId" ColumnName="DistrictId" />
+          <ScalarProperty Name="CounselorInActivity" ColumnName="CounselorInActivity" />
+          <ScalarProperty Name="NumberOfAssigedCounselor" ColumnName="NumberOfAssigedCounselor" />
+          <ScalarProperty Name="IsMissingCounselors" ColumnName="IsMissingCounselors" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="EndTime" ColumnName="EndTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LectureViews">
+      <EntityTypeMapping TypeName="IsTypeOf(LightSwitchApplication.LectureView)">
+        <MappingFragment StoreEntitySet="GetLectureView">
+          <ScalarProperty Name="ActivityTopic" ColumnName="ActivityTopic" />
+          <ScalarProperty Name="NumberOfActivities" ColumnName="NumberOfActivities" />
+          <ScalarProperty Name="NumberOfCounselors" ColumnName="NumberOfCounselors" />
+          <ScalarProperty Name="NumberOfClasses" ColumnName="NumberOfClasses" />
+          <ScalarProperty Name="ActivityType" ColumnName="ActivityType" />
+          <ScalarProperty Name="ActivityTopicCollection" ColumnName="ActivityTopicCollection" />
+          <ScalarProperty Name="NumberOfRounds" ColumnName="NumberOfRounds" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CounselorViews">
+      <EntityTypeMapping TypeName="IsTypeOf(LightSwitchApplication.CounselorView)">
+        <MappingFragment StoreEntitySet="GetCounselor">
+          <ScalarProperty Name="CounselorInActivity" ColumnName="CounselorInActivity" />
+          <ScalarProperty Name="TopicCollection" ColumnName="TopicCollection" />
+          <ScalarProperty Name="Topic" ColumnName="Topic" />
+          <ScalarProperty Name="SchoolName" ColumnName="SchoolName" />
+          <ScalarProperty Name="SchoolPartName" ColumnName="SchoolPartName" />
+          <ScalarProperty Name="ActivityPlace" ColumnName="ActivityPlace" />
+          <ScalarProperty Name="ActivityDate" ColumnName="ActivityDate" />
+          <ScalarProperty Name="Audience" ColumnName="Audience" />
+          <ScalarProperty Name="ActivityId" ColumnName="ActivityId" />
+          <ScalarProperty Name="Month" ColumnName="Month" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="frequencyViews">
+      <EntityTypeMapping TypeName="IsTypeOf(LightSwitchApplication.frequencyView)">
+        <MappingFragment StoreEntitySet="GetfrequencyView">
+          <ScalarProperty Name="SchoolName" ColumnName="SchoolName" />
+          <ScalarProperty Name="frequencyNum" ColumnName="frequencyNum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SummaryYears">
+      <EntityTypeMapping TypeName="IsTypeOf(LightSwitchApplication.SummaryYear)">
+        <MappingFragment StoreEntitySet="GetSummaryYearView">
+          <ScalarProperty Name="TotalNumberOfClasses" ColumnName="TotalNumberOfClasses" />
+          <ScalarProperty Name="TotalNumberOfCounselor" ColumnName="TotalNumberOfCounselor" />
+          <ScalarProperty Name="NumOfLectures" ColumnName="NumOfLectures" />
+          <ScalarProperty Name="ActivityDate" ColumnName="ActivityDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

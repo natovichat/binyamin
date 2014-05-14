@@ -1,0 +1,61 @@
+C:\Users\aviad\documents\visual studio 2010\Projects\Binyamin\Binyamin\Server\bin\Release\LSCodeGeneratorsTask.mcs
+C:\Users\aviad\documents\visual studio 2010\Projects\Binyamin\Binyamin\Server\bin\Release\Application.Server.dll.config
+C:\Users\aviad\documents\visual studio 2010\Projects\Binyamin\Binyamin\Server\bin\Release\Application.Server.dll
+C:\Users\aviad\documents\visual studio 2010\Projects\Binyamin\Binyamin\Server\bin\Release\Application.Server.pdb
+C:\Users\aviad\documents\visual studio 2010\Projects\Binyamin\Binyamin\Server\bin\Release\Application.Common.dll
+C:\Users\aviad\documents\visual studio 2010\Projects\Binyamin\Binyamin\Server\obj\Release\ResolveAssemblyReference.cache
+C:\Users\aviad\documents\visual studio 2010\Projects\Binyamin\Binyamin\Server\obj\Release\Application.Server.dll
+C:\Users\aviad\documents\visual studio 2010\Projects\Binyamin\Binyamin\Server\obj\Release\Application.Server.pdb
+C:\Binyamin\Binyamin\Server\bin\Release\LSCodeGeneratorsTask.mcs
+C:\Binyamin\Binyamin\Server\bin\Release\Application.Server.dll.config
+C:\Binyamin\Binyamin\Server\bin\Release\Application.Server.dll
+C:\Binyamin\Binyamin\Server\bin\Release\Application.Server.pdb
+C:\Binyamin\Binyamin\Server\bin\Release\Application.Common.dll
+C:\Binyamin\Binyamin\Server\obj\Release\ResolveAssemblyReference.cache
+C:\Binyamin\Binyamin\Server\obj\Release\Application.Server.dll
+C:\Binyamin\Binyamin\Server\obj\Release\Application.Server.pdb
+C:\Users\yoni\Downloads\פרויקט\ניסיון 1\Binyamin\Binyamin\Server\bin\Release\LSCodeGeneratorsTask.mcs
+C:\Users\yoni\Downloads\פרויקט\ניסיון 1\Binyamin\Binyamin\Server\bin\Release\Application.Server.dll.config
+C:\Users\yoni\Downloads\פרויקט\ניסיון 1\Binyamin\Binyamin\Server\bin\Release\Application.Server.dll
+C:\Users\yoni\Downloads\פרויקט\ניסיון 1\Binyamin\Binyamin\Server\bin\Release\Application.Server.pdb
+C:\Users\yoni\Downloads\פרויקט\ניסיון 1\Binyamin\Binyamin\Server\bin\Release\Application.Common.dll
+C:\Users\yoni\Downloads\פרויקט\ניסיון 1\Binyamin\Binyamin\Server\bin\Release\OfficeIntegration.Server.dll
+C:\Users\yoni\Downloads\פרויקט\ניסיון 1\Binyamin\Binyamin\Server\obj\Release\ResolveAssemblyReference.cache
+C:\Users\yoni\Downloads\פרויקט\ניסיון 1\Binyamin\Binyamin\Server\obj\Release\Application.Server.dll
+C:\Users\yoni\Downloads\פרויקט\ניסיון 1\Binyamin\Binyamin\Server\obj\Release\Application.Server.pdb
+C:\Users\yoni\Downloads\פרויקט\ניסיון 1 - Copy (8)\Binyamin\Binyamin\Server\bin\Release\LSCodeGeneratorsTask.mcs
+C:\Users\yoni\Downloads\פרויקט\ניסיון 1 - Copy (8)\Binyamin\Binyamin\Server\bin\Release\Application.Server.dll.config
+C:\Users\yoni\Downloads\פרויקט\ניסיון 1 - Copy (8)\Binyamin\Binyamin\Server\bin\Release\Application.Server.dll
+C:\Users\yoni\Downloads\פרויקט\ניסיון 1 - Copy (8)\Binyamin\Binyamin\Server\bin\Release\Application.Server.pdb
+C:\Users\yoni\Downloads\פרויקט\ניסיון 1 - Copy (8)\Binyamin\Binyamin\Server\bin\Release\Application.Common.dll
+C:\Users\yoni\Downloads\פרויקט\ניסיון 1 - Copy (8)\Binyamin\Binyamin\Server\bin\Release\OfficeIntegration.Server.dll
+C:\Users\yoni\Downloads\פרויקט\ניסיון 1 - Copy (8)\Binyamin\Binyamin\Server\obj\Release\ResolveAssemblyReference.cache
+C:\Users\yoni\Downloads\פרויקט\ניסיון 1 - Copy (8)\Binyamin\Binyamin\Server\obj\Release\Application.Server.dll
+C:\Users\yoni\Downloads\פרויקט\ניסיון 1 - Copy (8)\Binyamin\Binyamin\Server\obj\Release\Application.Server.pdb
+C:\Users\yoni\Downloads\פרויקט\ניסיון 1 - Copy (8) - Copy\Binyamin\Binyamin\Server\bin\Release\LSCodeGeneratorsTask.mcs
+C:\Users\yoni\Downloads\פרויקט\ניסיון 1 - Copy (8) - Copy\Binyamin\Binyamin\Server\bin\Release\Application.Server.dll.config
+C:\Users\yoni\Downloads\פרויקט\ניסיון 1 - Copy (8) - Copy\Binyamin\Binyamin\Server\bin\Release\Application.Server.dll
+C:\Users\yoni\Downloads\פרויקט\ניסיון 1 - Copy (8) - Copy\Binyamin\Binyamin\Server\bin\Release\Application.Server.pdb
+C:\Users\yoni\Downloads\פרויקט\ניסיון 1 - Copy (8) - Copy\Binyamin\Binyamin\Server\bin\Release\Application.Common.dll
+C:\Users\yoni\Downloads\פרויקט\ניסיון 1 - Copy (8) - Copy\Binyamin\Binyamin\Server\bin\Release\OfficeIntegration.Server.dll
+C:\Users\yoni\Downloads\פרויקט\ניסיון 1 - Copy (8) - Copy\Binyamin\Binyamin\Server\obj\Release\ResolveAssemblyReference.cache
+C:\Users\yoni\Downloads\פרויקט\ניסיון 1 - Copy (8) - Copy\Binyamin\Binyamin\Server\obj\Release\Application.Server.dll
+C:\Users\yoni\Downloads\פרויקט\ניסיון 1 - Copy (8) - Copy\Binyamin\Binyamin\Server\obj\Release\Application.Server.pdb
+C:\Users\IDAN\Documents\Visual Studio 2010\Projects\Binyamin YDIR\Binyamin\Binyamin\Server\bin\Release\LSCodeGeneratorsTask.mcs
+C:\Users\IDAN\Documents\Visual Studio 2010\Projects\Binyamin YDIR\Binyamin\Binyamin\Server\bin\Release\Application.Server.dll.config
+C:\Users\IDAN\Documents\Visual Studio 2010\Projects\Binyamin YDIR\Binyamin\Binyamin\Server\bin\Release\Application.Server.dll
+C:\Users\IDAN\Documents\Visual Studio 2010\Projects\Binyamin YDIR\Binyamin\Binyamin\Server\bin\Release\Application.Server.pdb
+C:\Users\IDAN\Documents\Visual Studio 2010\Projects\Binyamin YDIR\Binyamin\Binyamin\Server\bin\Release\Application.Common.dll
+C:\Users\IDAN\Documents\Visual Studio 2010\Projects\Binyamin YDIR\Binyamin\Binyamin\Server\bin\Release\OfficeIntegration.Server.dll
+C:\Users\IDAN\Documents\Visual Studio 2010\Projects\Binyamin YDIR\Binyamin\Binyamin\Server\obj\Release\ResolveAssemblyReference.cache
+C:\Users\IDAN\Documents\Visual Studio 2010\Projects\Binyamin YDIR\Binyamin\Binyamin\Server\obj\Release\Application.Server.dll
+C:\Users\IDAN\Documents\Visual Studio 2010\Projects\Binyamin YDIR\Binyamin\Binyamin\Server\obj\Release\Application.Server.pdb
+C:\Users\Roey\Documents\Visual Studio 2010\Projects\Binyamin YDIR\Binyamin\Binyamin\Server\bin\Release\LSCodeGeneratorsTask.mcs
+C:\Users\Roey\Documents\Visual Studio 2010\Projects\Binyamin YDIR\Binyamin\Binyamin\Server\bin\Release\Application.Server.dll.config
+C:\Users\Roey\Documents\Visual Studio 2010\Projects\Binyamin YDIR\Binyamin\Binyamin\Server\bin\Release\Application.Server.dll
+C:\Users\Roey\Documents\Visual Studio 2010\Projects\Binyamin YDIR\Binyamin\Binyamin\Server\bin\Release\Application.Server.pdb
+C:\Users\Roey\Documents\Visual Studio 2010\Projects\Binyamin YDIR\Binyamin\Binyamin\Server\bin\Release\Application.Common.dll
+C:\Users\Roey\Documents\Visual Studio 2010\Projects\Binyamin YDIR\Binyamin\Binyamin\Server\bin\Release\OfficeIntegration.Server.dll
+C:\Users\Roey\Documents\Visual Studio 2010\Projects\Binyamin YDIR\Binyamin\Binyamin\Server\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Roey\Documents\Visual Studio 2010\Projects\Binyamin YDIR\Binyamin\Binyamin\Server\obj\Release\Application.Server.dll
+C:\Users\Roey\Documents\Visual Studio 2010\Projects\Binyamin YDIR\Binyamin\Binyamin\Server\obj\Release\Application.Server.pdb

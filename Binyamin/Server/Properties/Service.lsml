@@ -1,0 +1,1707 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModelFragment xmlns="http://schemas.microsoft.com/LightSwitch/2010/xaml/model">
+  <ServiceApplication
+    Name="LightSwitchServiceApplication"
+    Version="1.0.0.0">
+    <ServiceApplication.Attributes>
+      <ModuleNamespace
+        Namespace="LightSwitchApplication" />
+    </ServiceApplication.Attributes>
+  </ServiceApplication>
+  <DataService
+    DataProvider="EntityFrameworkDataProvider"
+    EntityContainer="LightSwitchCommonModule:ApplicationData"
+    Name="ApplicationDataMapping">
+    <AssociationSetMapping
+      AssociationSet="Meeting_Counselors">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="Meeting_Counselors" />
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[Meeting_Counselors]/Members[Meeting]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Meeting_Counselor" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[Meeting_Counselors]/Members[Counselor]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <EntitySetMapping
+      EntitySet="Meetings">
+      <EntitySetMapping.Attributes>
+        <SsdlForeignKeyProperty
+          Name="Meeting_Counselor"
+          Nullable="True"
+          Type="int" />
+        <SsdlForeignKeyProperty
+          Name="Meeting_Topic"
+          Nullable="True"
+          Type="int" />
+        <SsdlForeignKeyProperty
+          Name="Round_Meeting"
+          Nullable="False"
+          Type="int" />
+        <SsdlForeignKeyProperty
+          Name="Meeting_Audience"
+          Nullable="False"
+          Type="int" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <AssociationSetMapping
+      AssociationSet="Meeting_Topics">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="Meeting_Topics" />
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[Meeting_Topics]/Members[Meeting]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Meeting_Topic" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[Meeting_Topics]/Members[Topic]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping
+      AssociationSet="Round_Meetings">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="Round_Meetings" />
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[Round_Meetings]/Members[Round]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[Round_Meetings]/Members[Meeting]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Round_Meeting" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <EntitySetMapping
+      EntitySet="Activities">
+      <EntitySetMapping.Attributes>
+        <SsdlForeignKeyProperty
+          Name="Activity_Topic"
+          Nullable="True"
+          Type="int" />
+        <SsdlForeignKeyProperty
+          Name="Activity_Contact"
+          Nullable="True"
+          Type="int" />
+        <SsdlForeignKeyProperty
+          Name="Activity_SchoolPart"
+          Nullable="True"
+          Type="int" />
+        <SsdlForeignKeyProperty
+          Name="Activity_ActivityType"
+          Nullable="True"
+          Type="int" />
+        <SsdlForeignKeyProperty
+          Name="Activity_Audience"
+          Nullable="True"
+          Type="int" />
+        <SsdlForeignKeyProperty
+          Name="Activity_ActivityStatus"
+          Nullable="False"
+          Type="int" />
+        <SsdlForeignKeyProperty
+          Name="Activity_District"
+          Nullable="True"
+          Type="int" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <AssociationSetMapping
+      AssociationSet="Activity_Topics">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="Activity_Topics" />
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[Activity_Topics]/Members[Activity]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Activity_Topic" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[Activity_Topics]/Members[Topic]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <EntitySetMapping
+      EntitySet="Schools" />
+    <EntitySetMapping
+      EntitySet="Contacts">
+      <EntitySetMapping.Attributes>
+        <SsdlForeignKeyProperty
+          Name="Role_Contact"
+          Nullable="True"
+          Type="int" />
+        <SsdlForeignKeyProperty
+          Name="SchoolPart_Contact"
+          Nullable="False"
+          Type="int" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <AssociationSetMapping
+      AssociationSet="Activity_Contacts">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="Activity_Contacts" />
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[Activity_Contacts]/Members[Activity]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Activity_Contact" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[Activity_Contacts]/Members[Contact]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping
+      AssociationSet="Role_Contacts">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="Role_Contacts" />
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[Role_Contacts]/Members[Role]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[Role_Contacts]/Members[Contact]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Role_Contact" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping
+      AssociationSet="School_SchoolParts">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="School_SchoolParts" />
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[School_SchoolParts]/Members[School]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[School_SchoolParts]/Members[SchoolPart]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="School_SchoolPart" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <EntitySetMapping
+      EntitySet="SchoolParts">
+      <EntitySetMapping.Attributes>
+        <SsdlForeignKeyProperty
+          Name="School_SchoolPart"
+          Nullable="False"
+          Type="int" />
+        <SsdlForeignKeyProperty
+          Name="SchoolPart_SchoolType"
+          Nullable="True"
+          Type="int" />
+        <SsdlForeignKeyProperty
+          Name="SchoolPart_City"
+          Nullable="True"
+          Type="int" />
+        <SsdlForeignKeyProperty
+          Name="SchoolPart_District"
+          Nullable="False"
+          Type="int" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <AssociationSetMapping
+      AssociationSet="SchoolPart_Contacts">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="SchoolPart_Contacts" />
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[SchoolPart_Contacts]/Members[SchoolPart]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[SchoolPart_Contacts]/Members[Contact]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="SchoolPart_Contact" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping
+      AssociationSet="Activity_SchoolParts">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="Activity_SchoolParts" />
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[Activity_SchoolParts]/Members[Activity]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Activity_SchoolPart" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[Activity_SchoolParts]/Members[SchoolPart]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping
+      AssociationSet="Activity_Rounds">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="Activity_Rounds" />
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[Activity_Rounds]/Members[Activity]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[Activity_Rounds]/Members[Round]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Activity_Round" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <EntitySetMapping
+      EntitySet="Rounds">
+      <EntitySetMapping.Attributes>
+        <SsdlForeignKeyProperty
+          Name="Activity_Round"
+          Nullable="False"
+          Type="int" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <AssociationSetMapping
+      AssociationSet="Activity_ActivityTypes">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="Activity_ActivityTypes" />
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[Activity_ActivityTypes]/Members[Activity]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Activity_ActivityType" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[Activity_ActivityTypes]/Members[ActivityType]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <EntitySetMapping
+      EntitySet="ActivityTypes" />
+    <AssociationSetMapping
+      AssociationSet="TopicCollection_ActivityTypes">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="TopicCollection_ActivityTypes" />
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[TopicCollection_ActivityTypes]/Members[TopicCollection]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="TopicCollection_ActivityType" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[TopicCollection_ActivityTypes]/Members[ActivityType]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <EntitySetMapping
+      EntitySet="TopicCollections">
+      <EntitySetMapping.Attributes>
+        <SsdlForeignKeyProperty
+          Name="TopicCollection_ActivityType"
+          Nullable="False"
+          Type="int" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <AssociationSetMapping
+      AssociationSet="TopicCollection_Topics">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="TopicCollection_Topics" />
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[TopicCollection_Topics]/Members[TopicCollection]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[TopicCollection_Topics]/Members[Topic]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="TopicCollection_Topic" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <EntitySetMapping
+      EntitySet="Topics">
+      <EntitySetMapping.Attributes>
+        <SsdlForeignKeyProperty
+          Name="TopicCollection_Topic"
+          Nullable="False"
+          Type="int" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <AssociationSetMapping
+      AssociationSet="SchoolPart_SchoolTypes">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="SchoolPart_SchoolTypes" />
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[SchoolPart_SchoolTypes]/Members[SchoolPart]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="SchoolPart_SchoolType" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[SchoolPart_SchoolTypes]/Members[SchoolType]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping
+      AssociationSet="SchoolPart_Cities">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="SchoolPart_Cities" />
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[SchoolPart_Cities]/Members[SchoolPart]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="SchoolPart_City" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[SchoolPart_Cities]/Members[City]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping
+      AssociationSet="Counselor_Cities">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="Counselor_Cities" />
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[Counselor_Cities]/Members[Counselor]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Counselor_City" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[Counselor_Cities]/Members[City]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <EntitySetMapping
+      EntitySet="Counselors">
+      <EntitySetMapping.Attributes>
+        <SsdlForeignKeyProperty
+          Name="Counselor_City"
+          Nullable="True"
+          Type="int" />
+        <SsdlForeignKeyProperty
+          Name="Counselor_District"
+          Nullable="True"
+          Type="int" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <AssociationSetMapping
+      AssociationSet="ActivityCounselor_Activities">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="ActivityCounselor_Activities" />
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[ActivityCounselor_Activities]/Members[ActivityCounselor]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="ActivityCounselor_Activity" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[ActivityCounselor_Activities]/Members[Activity]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <EntitySetMapping
+      EntitySet="ActivityCounselors">
+      <EntitySetMapping.Attributes>
+        <SsdlForeignKeyProperty
+          Name="ActivityCounselor_Activity"
+          Nullable="False"
+          Type="int" />
+        <SsdlForeignKeyProperty
+          Name="ActivityCounselor_Counselor"
+          Nullable="False"
+          Type="int" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <AssociationSetMapping
+      AssociationSet="ActivityCounselor_Counselors">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="ActivityCounselor_Counselors" />
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[ActivityCounselor_Counselors]/Members[ActivityCounselor]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="ActivityCounselor_Counselor" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[ActivityCounselor_Counselors]/Members[Counselor]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping
+      AssociationSet="SchoolPart_Districts">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="SchoolPart_Districts" />
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[SchoolPart_Districts]/Members[SchoolPart]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="SchoolPart_District" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[SchoolPart_Districts]/Members[District]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping
+      AssociationSet="City_Districts">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="City_Districts" />
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[City_Districts]/Members[City]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="City_District" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[City_Districts]/Members[District]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <EntitySetMapping
+      EntitySet="Cities">
+      <EntitySetMapping.Attributes>
+        <SsdlForeignKeyProperty
+          Name="City_District"
+          Nullable="True"
+          Type="int" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <AssociationSetMapping
+      AssociationSet="Meeting_Audiences">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="Meeting_Audiences" />
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[Meeting_Audiences]/Members[Meeting]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Meeting_Audience" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[Meeting_Audiences]/Members[Audience]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping
+      AssociationSet="Activity_Audiences">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="Activity_Audiences" />
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[Activity_Audiences]/Members[Activity]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Activity_Audience" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[Activity_Audiences]/Members[Audience]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping
+      AssociationSet="Counselor_Districts">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="Counselor_Districts" />
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[Counselor_Districts]/Members[Counselor]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Counselor_District" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[Counselor_Districts]/Members[District]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping
+      AssociationSet="Activity_ActivityStatusSet">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="Activity_ActivityStatusSet" />
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[Activity_ActivityStatusSet]/Members[Activity]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Activity_ActivityStatus" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[Activity_ActivityStatusSet]/Members[ActivityStatus]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping
+      AssociationSet="Activity_Districts">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="Activity_Districts" />
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[Activity_Districts]/Members[Activity]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Activity_District" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[Activity_Districts]/Members[District]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <EntitySetMapping
+      EntitySet="Partners">
+      <EntitySetMapping.Attributes>
+        <SsdlForeignKeyProperty
+          Name="Partners_PartnerTypes"
+          Nullable="False"
+          Type="int" />
+        <SsdlForeignKeyProperty
+          Name="Partners_PartnersGroups"
+          Nullable="True"
+          Type="int" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <AssociationSetMapping
+      AssociationSet="Partners_PartnerTypesSet">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="Partners_PartnerTypesSet" />
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[Partners_PartnerTypesSet]/Members[Partners]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Partners_PartnerTypes" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[Partners_PartnerTypesSet]/Members[PartnerTypes]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping
+      AssociationSet="PartnerSchools_PartnersSet">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="PartnerSchools_PartnersSet" />
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[PartnerSchools_PartnersSet]/Members[PartnerSchools]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="PartnerSchools_Partners" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[PartnerSchools_PartnersSet]/Members[Partners]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <EntitySetMapping
+      EntitySet="PartnerSchools">
+      <EntitySetMapping.Attributes>
+        <SsdlForeignKeyProperty
+          Name="PartnerSchools_Partners"
+          Nullable="False"
+          Type="int" />
+        <SsdlForeignKeyProperty
+          Name="PartnerSchools_School"
+          Nullable="False"
+          Type="int" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <AssociationSetMapping
+      AssociationSet="PartnerSchools_Schools">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="PartnerSchools_Schools" />
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[PartnerSchools_Schools]/Members[PartnerSchools]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="PartnerSchools_School" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[PartnerSchools_Schools]/Members[School]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping
+      AssociationSet="Partners_PartnersGroupsSet">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="Partners_PartnersGroupsSet" />
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[Partners_PartnersGroupsSet]/Members[Partners]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Partners_PartnersGroups" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[Partners_PartnersGroupsSet]/Members[PartnersGroups]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <EntitySetMapping
+      EntitySet="PartnersReport">
+      <EntitySetMapping.Attributes>
+        <SsdlForeignKeyProperty
+          Name="PartnersReport_SchoolPart"
+          Nullable="False"
+          Type="int" />
+        <SsdlForeignKeyProperty
+          Name="PartnersReport_PartnersGroups"
+          Nullable="False"
+          Type="int" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <AssociationSetMapping
+      AssociationSet="PartnerReportActivities_Activities">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="PartnerReportActivities_Activities" />
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[PartnerReportActivities_Activities]/Members[PartnerReportActivities]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="PartnerReportActivities_Activity" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[PartnerReportActivities_Activities]/Members[Activity]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <EntitySetMapping
+      EntitySet="PartnersReportActivities">
+      <EntitySetMapping.Attributes>
+        <SsdlForeignKeyProperty
+          Name="PartnerReportActivities_Activity"
+          Nullable="False"
+          Type="int" />
+        <SsdlForeignKeyProperty
+          Name="PartnersReport_PartnerReportActivities"
+          Nullable="False"
+          Type="int" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <AssociationSetMapping
+      AssociationSet="PartnersReport_PartnerReportActivitiesSet">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="PartnersReport_PartnerReportActivitiesSet" />
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[PartnersReport_PartnerReportActivitiesSet]/Members[PartnersReport]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[PartnersReport_PartnerReportActivitiesSet]/Members[PartnerReportActivities]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="PartnersReport_PartnerReportActivities" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping
+      AssociationSet="PartnersReport_SchoolParts">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="PartnersReport_SchoolParts" />
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[PartnersReport_SchoolParts]/Members[PartnersReport]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="PartnersReport_SchoolPart" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[PartnersReport_SchoolParts]/Members[SchoolPart]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping
+      AssociationSet="Orders_SchoolParts">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="Order_SchoolParts" />
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[Orders_SchoolParts]/Members[Orders]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Order_SchoolPart" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[Orders_SchoolParts]/Members[SchoolPart]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <EntitySetMapping
+      EntitySet="Orders">
+      <EntitySetMapping.Attributes>
+        <SsdlForeignKeyProperty
+          Name="Order_SchoolPart"
+          Nullable="False"
+          Type="int" />
+        <SsdlForeignKeyProperty
+          Name="Order_Contact"
+          Nullable="False"
+          Type="int" />
+        <SsdlForeignKeyProperty
+          Name="Order_Audience"
+          Nullable="False"
+          Type="int" />
+        <SsdlForeignKeyProperty
+          Name="Orders_Topic"
+          Nullable="False"
+          Type="int" />
+        <SsdlForeignKeyProperty
+          Name="Orders_OrderClassesAndCounslers"
+          Nullable="False"
+          Type="int" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <AssociationSetMapping
+      AssociationSet="Orders_Contacts">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="Order_Contacts" />
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[Orders_Contacts]/Members[Orders]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Order_Contact" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[Orders_Contacts]/Members[Contact]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping
+      AssociationSet="Orders_Audiences">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="Order_Audiences" />
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[Orders_Audiences]/Members[Orders]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Order_Audience" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[Orders_Audiences]/Members[Audience]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping
+      AssociationSet="Orders_Topics">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="Orders_Topics" />
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[Orders_Topics]/Members[Orders]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Orders_Topic" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[Orders_Topics]/Members[Topic]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping
+      AssociationSet="PartnersReport_PartnersGroupsSet">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="PartnersReport_PartnersGroupsSet" />
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[PartnersReport_PartnersGroupsSet]/Members[PartnersReport]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="PartnersReport_PartnersGroups" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[PartnersReport_PartnersGroupsSet]/Members[PartnersGroups]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping
+      AssociationSet="Orders_OrderClassesAndCounslersSet">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="Orders_OrderClassesAndCounslersSet" />
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[Orders_OrderClassesAndCounslersSet]/Members[Orders]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Orders_OrderClassesAndCounslers" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[Orders_OrderClassesAndCounslersSet]/Members[OrderClassesAndCounslers]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <AssociationSetMapping
+      AssociationSet="OrderPropertiesWrapper_OrderPropertiesSet">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="OrderPropertiesWrapper_OrderPropertiesSet" />
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[OrderPropertiesWrapper_OrderPropertiesSet]/Members[OrderPropertiesWrapper]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[OrderPropertiesWrapper_OrderPropertiesSet]/Members[OrderProperties]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="OrderPropertiesWrapper_OrderProperties" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <EntitySetMapping
+      EntitySet="OrderPropertiesWrappers" />
+    <EntitySetMapping
+      EntitySet="OrderProperties">
+      <EntitySetMapping.Attributes>
+        <SsdlForeignKeyProperty
+          Name="OrderPropertiesWrapper_OrderProperties"
+          Nullable="False"
+          Type="int" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <AssociationSetMapping
+      AssociationSet="ActivityCounselorCommit_Activities">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="ActivityCounselorCommit_Activities" />
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[ActivityCounselorCommit_Activities]/Members[ActivityCounselorCommit]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="ActivityCounselorCommit_Activity" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[ActivityCounselorCommit_Activities]/Members[Activity]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+    <EntitySetMapping
+      EntitySet="ActivityCounselorCommits">
+      <EntitySetMapping.Attributes>
+        <SsdlForeignKeyProperty
+          Name="ActivityCounselorCommit_Activity"
+          Nullable="False"
+          Type="int" />
+        <SsdlForeignKeyProperty
+          Name="ActivityCounselorCommit_Counselor"
+          Nullable="False"
+          Type="int" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <AssociationSetMapping
+      AssociationSet="ActivityCounselorCommit_Counselors">
+      <AssociationSetMapping.Attributes>
+        <SsdlAssociationSet
+          Name="ActivityCounselorCommit_Counselors" />
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[ActivityCounselorCommit_Counselors]/Members[ActivityCounselorCommit]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="ActivityCounselorCommit_Counselor" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+        <SsdlAssociationSetEnd
+          End="LightSwitchCommonModule:ApplicationData/Members[ActivityCounselorCommit_Counselors]/Members[Counselor]">
+          <SsdlAssociationSetEnd.Attributes>
+            <SsdlPropertyRef
+              Name="Id" />
+          </SsdlAssociationSetEnd.Attributes>
+        </SsdlAssociationSetEnd>
+      </AssociationSetMapping.Attributes>
+    </AssociationSetMapping>
+  </DataService>
+  <DataService
+    DataProvider="CustomDataProvider"
+    EntityContainer="LightSwitchCommonModule:BinyaminReportData"
+    Name="BinyaminReportDataDataService">
+    <DataService.ConnectionProperties>
+      <ConnectionProperty
+        Name="AssemblyName"
+        Value="BinyaminSerivces" />
+      <ConnectionProperty
+        Name="FullClassName"
+        Value="Binyamin.Reporting.BinyaminReport" />
+      <ConnectionProperty
+        Name="SafeConnectionString"
+        Value="" />
+      <ConnectionProperty
+        Name="ConnectionStringGuid"
+        Value="5d54d7be-1575-4bdd-933c-fb41d8e90f5d" />
+      <ConnectionProperty
+        Name="ConnectionStringDescription"
+        Value="" />
+    </DataService.ConnectionProperties>
+    <EntitySetMapping
+      EntitySet="SummaryYears">
+      <EntitySetMapping.Attributes>
+        <WcfRiaEntitySet
+          EntitySetQuery="GetSummaryYearView"
+          EntityTypeName="Binyamin.Reporting.SummaryYear" />
+        <WcfRiaProperty
+          Name="TotalNumberOfClasses"
+          Property="LightSwitchCommonModule:SummaryYear/Properties[TotalNumberOfClasses]" />
+        <WcfRiaProperty
+          Name="TotalNumberOfCounselor"
+          Property="LightSwitchCommonModule:SummaryYear/Properties[TotalNumberOfCounselor]" />
+        <WcfRiaProperty
+          Name="ActivityDate"
+          Property="LightSwitchCommonModule:SummaryYear/Properties[ActivityDate]" />
+        <WcfRiaProperty
+          Name="NumOfLectures"
+          Property="LightSwitchCommonModule:SummaryYear/Properties[NumOfLectures]" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <QueryOperationMapping
+      Operation="GetSummaryYearViewBYDate">
+      <QueryOperationMapping.Attributes>
+        <WcfRiaQueryOperation
+          Name="GetSummaryYearViewBYDate" />
+        <WcfRiaQueryOperationParameter
+          Name="start"
+          QueryOperationParameter="LightSwitchCommonModule:BinyaminReportData/Members[GetSummaryYearViewBYDate]/Parameters[start]" />
+        <WcfRiaQueryOperationParameter
+          Name="end"
+          QueryOperationParameter="LightSwitchCommonModule:BinyaminReportData/Members[GetSummaryYearViewBYDate]/Parameters[c_end]" />
+      </QueryOperationMapping.Attributes>
+    </QueryOperationMapping>
+    <QueryOperationMapping
+      Operation="GetSummaryYearViewBYYear">
+      <QueryOperationMapping.Attributes>
+        <WcfRiaQueryOperation
+          Name="GetSummaryYearViewBYYear" />
+        <WcfRiaQueryOperationParameter
+          Name="start"
+          QueryOperationParameter="LightSwitchCommonModule:BinyaminReportData/Members[GetSummaryYearViewBYYear]/Parameters[start]" />
+        <WcfRiaQueryOperationParameter
+          Name="end"
+          QueryOperationParameter="LightSwitchCommonModule:BinyaminReportData/Members[GetSummaryYearViewBYYear]/Parameters[c_end]" />
+      </QueryOperationMapping.Attributes>
+    </QueryOperationMapping>
+    <EntitySetMapping
+      EntitySet="frequencyViews">
+      <EntitySetMapping.Attributes>
+        <WcfRiaEntitySet
+          EntitySetQuery="GetfrequencyView"
+          EntityTypeName="Binyamin.Reporting.frequencyView" />
+        <WcfRiaProperty
+          Name="SchoolName"
+          Property="LightSwitchCommonModule:frequencyView/Properties[SchoolName]" />
+        <WcfRiaProperty
+          Name="frequencyNum"
+          Property="LightSwitchCommonModule:frequencyView/Properties[frequencyNum]" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <QueryOperationMapping
+      Operation="GetfrequencyViewBYDate">
+      <QueryOperationMapping.Attributes>
+        <WcfRiaQueryOperation
+          Name="GetfrequencyViewBYDate" />
+        <WcfRiaQueryOperationParameter
+          Name="start"
+          QueryOperationParameter="LightSwitchCommonModule:BinyaminReportData/Members[GetfrequencyViewBYDate]/Parameters[start]" />
+        <WcfRiaQueryOperationParameter
+          Name="end"
+          QueryOperationParameter="LightSwitchCommonModule:BinyaminReportData/Members[GetfrequencyViewBYDate]/Parameters[c_end]" />
+      </QueryOperationMapping.Attributes>
+    </QueryOperationMapping>
+    <QueryOperationMapping
+      Operation="GetfrequencyViewByType">
+      <QueryOperationMapping.Attributes>
+        <WcfRiaQueryOperation
+          Name="GetfrequencyViewByType" />
+        <WcfRiaQueryOperationParameter
+          Name="start"
+          QueryOperationParameter="LightSwitchCommonModule:BinyaminReportData/Members[GetfrequencyViewByType]/Parameters[start]" />
+        <WcfRiaQueryOperationParameter
+          Name="end"
+          QueryOperationParameter="LightSwitchCommonModule:BinyaminReportData/Members[GetfrequencyViewByType]/Parameters[c_end]" />
+        <WcfRiaQueryOperationParameter
+          Name="type"
+          QueryOperationParameter="LightSwitchCommonModule:BinyaminReportData/Members[GetfrequencyViewByType]/Parameters[type]" />
+      </QueryOperationMapping.Attributes>
+    </QueryOperationMapping>
+    <QueryOperationMapping
+      Operation="GetfrequencyViewByAud">
+      <QueryOperationMapping.Attributes>
+        <WcfRiaQueryOperation
+          Name="GetfrequencyViewByAud" />
+        <WcfRiaQueryOperationParameter
+          Name="start"
+          QueryOperationParameter="LightSwitchCommonModule:BinyaminReportData/Members[GetfrequencyViewByAud]/Parameters[start]" />
+        <WcfRiaQueryOperationParameter
+          Name="end"
+          QueryOperationParameter="LightSwitchCommonModule:BinyaminReportData/Members[GetfrequencyViewByAud]/Parameters[c_end]" />
+        <WcfRiaQueryOperationParameter
+          Name="aud"
+          QueryOperationParameter="LightSwitchCommonModule:BinyaminReportData/Members[GetfrequencyViewByAud]/Parameters[aud]" />
+      </QueryOperationMapping.Attributes>
+    </QueryOperationMapping>
+    <QueryOperationMapping
+      Operation="GetfrequencyViewBYDistrictAndAud">
+      <QueryOperationMapping.Attributes>
+        <WcfRiaQueryOperation
+          Name="GetfrequencyViewBYDistrictAndAud" />
+        <WcfRiaQueryOperationParameter
+          Name="start"
+          QueryOperationParameter="LightSwitchCommonModule:BinyaminReportData/Members[GetfrequencyViewBYDistrictAndAud]/Parameters[start]" />
+        <WcfRiaQueryOperationParameter
+          Name="end"
+          QueryOperationParameter="LightSwitchCommonModule:BinyaminReportData/Members[GetfrequencyViewBYDistrictAndAud]/Parameters[c_end]" />
+        <WcfRiaQueryOperationParameter
+          Name="aud"
+          QueryOperationParameter="LightSwitchCommonModule:BinyaminReportData/Members[GetfrequencyViewBYDistrictAndAud]/Parameters[aud]" />
+        <WcfRiaQueryOperationParameter
+          Name="district"
+          QueryOperationParameter="LightSwitchCommonModule:BinyaminReportData/Members[GetfrequencyViewBYDistrictAndAud]/Parameters[district]" />
+      </QueryOperationMapping.Attributes>
+    </QueryOperationMapping>
+    <QueryOperationMapping
+      Operation="GetfrequencyViewBYDistrict">
+      <QueryOperationMapping.Attributes>
+        <WcfRiaQueryOperation
+          Name="GetfrequencyViewBYDistrict" />
+        <WcfRiaQueryOperationParameter
+          Name="start"
+          QueryOperationParameter="LightSwitchCommonModule:BinyaminReportData/Members[GetfrequencyViewBYDistrict]/Parameters[start]" />
+        <WcfRiaQueryOperationParameter
+          Name="end"
+          QueryOperationParameter="LightSwitchCommonModule:BinyaminReportData/Members[GetfrequencyViewBYDistrict]/Parameters[c_end]" />
+        <WcfRiaQueryOperationParameter
+          Name="district"
+          QueryOperationParameter="LightSwitchCommonModule:BinyaminReportData/Members[GetfrequencyViewBYDistrict]/Parameters[district]" />
+      </QueryOperationMapping.Attributes>
+    </QueryOperationMapping>
+    <QueryOperationMapping
+      Operation="GetfrequencyViewByDistrictAndType">
+      <QueryOperationMapping.Attributes>
+        <WcfRiaQueryOperation
+          Name="GetfrequencyViewByDistrictAndType" />
+        <WcfRiaQueryOperationParameter
+          Name="start"
+          QueryOperationParameter="LightSwitchCommonModule:BinyaminReportData/Members[GetfrequencyViewByDistrictAndType]/Parameters[start]" />
+        <WcfRiaQueryOperationParameter
+          Name="end"
+          QueryOperationParameter="LightSwitchCommonModule:BinyaminReportData/Members[GetfrequencyViewByDistrictAndType]/Parameters[c_end]" />
+        <WcfRiaQueryOperationParameter
+          Name="type"
+          QueryOperationParameter="LightSwitchCommonModule:BinyaminReportData/Members[GetfrequencyViewByDistrictAndType]/Parameters[type]" />
+        <WcfRiaQueryOperationParameter
+          Name="district"
+          QueryOperationParameter="LightSwitchCommonModule:BinyaminReportData/Members[GetfrequencyViewByDistrictAndType]/Parameters[district]" />
+      </QueryOperationMapping.Attributes>
+    </QueryOperationMapping>
+    <EntitySetMapping
+      EntitySet="LectureViews">
+      <EntitySetMapping.Attributes>
+        <WcfRiaEntitySet
+          EntitySetQuery="GetLectureView"
+          EntityTypeName="Binyamin.Reporting.LectureView" />
+        <WcfRiaProperty
+          Name="ActivityTopic"
+          Property="LightSwitchCommonModule:LectureView/Properties[ActivityTopic]" />
+        <WcfRiaProperty
+          Name="ActivityTopicCollection"
+          Property="LightSwitchCommonModule:LectureView/Properties[ActivityTopicCollection]" />
+        <WcfRiaProperty
+          Name="NumberOfActivities"
+          Property="LightSwitchCommonModule:LectureView/Properties[NumberOfActivities]" />
+        <WcfRiaProperty
+          Name="NumberOfCounselors"
+          Property="LightSwitchCommonModule:LectureView/Properties[NumberOfCounselors]" />
+        <WcfRiaProperty
+          Name="NumberOfClasses"
+          Property="LightSwitchCommonModule:LectureView/Properties[NumberOfClasses]" />
+        <WcfRiaProperty
+          Name="NumberOfRounds"
+          Property="LightSwitchCommonModule:LectureView/Properties[NumberOfRounds]" />
+        <WcfRiaProperty
+          Name="ActivityType"
+          Property="LightSwitchCommonModule:LectureView/Properties[ActivityType]" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <QueryOperationMapping
+      Operation="GetLectureViewByDate">
+      <QueryOperationMapping.Attributes>
+        <WcfRiaQueryOperation
+          Name="GetLectureViewByDate" />
+        <WcfRiaQueryOperationParameter
+          Name="start"
+          QueryOperationParameter="LightSwitchCommonModule:BinyaminReportData/Members[GetLectureViewByDate]/Parameters[start]" />
+        <WcfRiaQueryOperationParameter
+          Name="end"
+          QueryOperationParameter="LightSwitchCommonModule:BinyaminReportData/Members[GetLectureViewByDate]/Parameters[c_end]" />
+      </QueryOperationMapping.Attributes>
+    </QueryOperationMapping>
+    <QueryOperationMapping
+      Operation="GetLectureViewBydistrict">
+      <QueryOperationMapping.Attributes>
+        <WcfRiaQueryOperation
+          Name="GetLectureViewBydistrict" />
+        <WcfRiaQueryOperationParameter
+          Name="start"
+          QueryOperationParameter="LightSwitchCommonModule:BinyaminReportData/Members[GetLectureViewBydistrict]/Parameters[start]" />
+        <WcfRiaQueryOperationParameter
+          Name="end"
+          QueryOperationParameter="LightSwitchCommonModule:BinyaminReportData/Members[GetLectureViewBydistrict]/Parameters[c_end]" />
+        <WcfRiaQueryOperationParameter
+          Name="district"
+          QueryOperationParameter="LightSwitchCommonModule:BinyaminReportData/Members[GetLectureViewBydistrict]/Parameters[district]" />
+      </QueryOperationMapping.Attributes>
+    </QueryOperationMapping>
+    <QueryOperationMapping
+      Operation="GetLectureViewByAudience">
+      <QueryOperationMapping.Attributes>
+        <WcfRiaQueryOperation
+          Name="GetLectureViewByAudience" />
+        <WcfRiaQueryOperationParameter
+          Name="start"
+          QueryOperationParameter="LightSwitchCommonModule:BinyaminReportData/Members[GetLectureViewByAudience]/Parameters[start]" />
+        <WcfRiaQueryOperationParameter
+          Name="end"
+          QueryOperationParameter="LightSwitchCommonModule:BinyaminReportData/Members[GetLectureViewByAudience]/Parameters[c_end]" />
+        <WcfRiaQueryOperationParameter
+          Name="audience"
+          QueryOperationParameter="LightSwitchCommonModule:BinyaminReportData/Members[GetLectureViewByAudience]/Parameters[audience]" />
+      </QueryOperationMapping.Attributes>
+    </QueryOperationMapping>
+    <QueryOperationMapping
+      Operation="GetLectureViewByCity">
+      <QueryOperationMapping.Attributes>
+        <WcfRiaQueryOperation
+          Name="GetLectureViewByCity" />
+        <WcfRiaQueryOperationParameter
+          Name="start"
+          QueryOperationParameter="LightSwitchCommonModule:BinyaminReportData/Members[GetLectureViewByCity]/Parameters[start]" />
+        <WcfRiaQueryOperationParameter
+          Name="end"
+          QueryOperationParameter="LightSwitchCommonModule:BinyaminReportData/Members[GetLectureViewByCity]/Parameters[c_end]" />
+        <WcfRiaQueryOperationParameter
+          Name="city"
+          QueryOperationParameter="LightSwitchCommonModule:BinyaminReportData/Members[GetLectureViewByCity]/Parameters[city]" />
+      </QueryOperationMapping.Attributes>
+    </QueryOperationMapping>
+    <QueryOperationMapping
+      Operation="GetLectureViewBydistrictAndAudience">
+      <QueryOperationMapping.Attributes>
+        <WcfRiaQueryOperation
+          Name="GetLectureViewBydistrictAndAudience" />
+        <WcfRiaQueryOperationParameter
+          Name="start"
+          QueryOperationParameter="LightSwitchCommonModule:BinyaminReportData/Members[GetLectureViewBydistrictAndAudience]/Parameters[start]" />
+        <WcfRiaQueryOperationParameter
+          Name="end"
+          QueryOperationParameter="LightSwitchCommonModule:BinyaminReportData/Members[GetLectureViewBydistrictAndAudience]/Parameters[c_end]" />
+        <WcfRiaQueryOperationParameter
+          Name="district"
+          QueryOperationParameter="LightSwitchCommonModule:BinyaminReportData/Members[GetLectureViewBydistrictAndAudience]/Parameters[district]" />
+        <WcfRiaQueryOperationParameter
+          Name="audience"
+          QueryOperationParameter="LightSwitchCommonModule:BinyaminReportData/Members[GetLectureViewBydistrictAndAudience]/Parameters[audience]" />
+      </QueryOperationMapping.Attributes>
+    </QueryOperationMapping>
+    <QueryOperationMapping
+      Operation="GetLectureViewByAudienceAndCity">
+      <QueryOperationMapping.Attributes>
+        <WcfRiaQueryOperation
+          Name="GetLectureViewByAudienceAndCity" />
+        <WcfRiaQueryOperationParameter
+          Name="start"
+          QueryOperationParameter="LightSwitchCommonModule:BinyaminReportData/Members[GetLectureViewByAudienceAndCity]/Parameters[start]" />
+        <WcfRiaQueryOperationParameter
+          Name="end"
+          QueryOperationParameter="LightSwitchCommonModule:BinyaminReportData/Members[GetLectureViewByAudienceAndCity]/Parameters[c_end]" />
+        <WcfRiaQueryOperationParameter
+          Name="audience"
+          QueryOperationParameter="LightSwitchCommonModule:BinyaminReportData/Members[GetLectureViewByAudienceAndCity]/Parameters[audience]" />
+        <WcfRiaQueryOperationParameter
+          Name="city"
+          QueryOperationParameter="LightSwitchCommonModule:BinyaminReportData/Members[GetLectureViewByAudienceAndCity]/Parameters[city]" />
+      </QueryOperationMapping.Attributes>
+    </QueryOperationMapping>
+    <QueryOperationMapping
+      Operation="GetLectureViewBydistrictAndCity">
+      <QueryOperationMapping.Attributes>
+        <WcfRiaQueryOperation
+          Name="GetLectureViewBydistrictAndCity" />
+        <WcfRiaQueryOperationParameter
+          Name="start"
+          QueryOperationParameter="LightSwitchCommonModule:BinyaminReportData/Members[GetLectureViewBydistrictAndCity]/Parameters[start]" />
+        <WcfRiaQueryOperationParameter
+          Name="end"
+          QueryOperationParameter="LightSwitchCommonModule:BinyaminReportData/Members[GetLectureViewBydistrictAndCity]/Parameters[c_end]" />
+        <WcfRiaQueryOperationParameter
+          Name="district"
+          QueryOperationParameter="LightSwitchCommonModule:BinyaminReportData/Members[GetLectureViewBydistrictAndCity]/Parameters[district]" />
+        <WcfRiaQueryOperationParameter
+          Name="city"
+          QueryOperationParameter="LightSwitchCommonModule:BinyaminReportData/Members[GetLectureViewBydistrictAndCity]/Parameters[city]" />
+      </QueryOperationMapping.Attributes>
+    </QueryOperationMapping>
+    <QueryOperationMapping
+      Operation="GetLectureViewBydistrictAndAudienceAndCity">
+      <QueryOperationMapping.Attributes>
+        <WcfRiaQueryOperation
+          Name="GetLectureViewBydistrictAndAudienceAndCity" />
+        <WcfRiaQueryOperationParameter
+          Name="start"
+          QueryOperationParameter="LightSwitchCommonModule:BinyaminReportData/Members[GetLectureViewBydistrictAndAudienceAndCity]/Parameters[start]" />
+        <WcfRiaQueryOperationParameter
+          Name="end"
+          QueryOperationParameter="LightSwitchCommonModule:BinyaminReportData/Members[GetLectureViewBydistrictAndAudienceAndCity]/Parameters[c_end]" />
+        <WcfRiaQueryOperationParameter
+          Name="district"
+          QueryOperationParameter="LightSwitchCommonModule:BinyaminReportData/Members[GetLectureViewBydistrictAndAudienceAndCity]/Parameters[district]" />
+        <WcfRiaQueryOperationParameter
+          Name="audience"
+          QueryOperationParameter="LightSwitchCommonModule:BinyaminReportData/Members[GetLectureViewBydistrictAndAudienceAndCity]/Parameters[audience]" />
+        <WcfRiaQueryOperationParameter
+          Name="city"
+          QueryOperationParameter="LightSwitchCommonModule:BinyaminReportData/Members[GetLectureViewBydistrictAndAudienceAndCity]/Parameters[city]" />
+      </QueryOperationMapping.Attributes>
+    </QueryOperationMapping>
+    <EntitySetMapping
+      EntitySet="ReportSchoolViews">
+      <EntitySetMapping.Attributes>
+        <WcfRiaEntitySet
+          EntitySetQuery="GetReportSchoolView"
+          EntityTypeName="Binyamin.Reporting.ReportSchoolView" />
+        <WcfRiaProperty
+          Name="ActivityId"
+          Property="LightSwitchCommonModule:ReportSchoolView/Properties[ActivityId]" />
+        <WcfRiaProperty
+          Name="SchoolPartId"
+          Property="LightSwitchCommonModule:ReportSchoolView/Properties[SchoolPartId]" />
+        <WcfRiaProperty
+          Name="SchoolName"
+          Property="LightSwitchCommonModule:ReportSchoolView/Properties[SchoolName]" />
+        <WcfRiaProperty
+          Name="SchoolPartName"
+          Property="LightSwitchCommonModule:ReportSchoolView/Properties[SchoolPartName]" />
+        <WcfRiaProperty
+          Name="TopicCollection"
+          Property="LightSwitchCommonModule:ReportSchoolView/Properties[TopicCollection]" />
+        <WcfRiaProperty
+          Name="Topic"
+          Property="LightSwitchCommonModule:ReportSchoolView/Properties[Topic]" />
+        <WcfRiaProperty
+          Name="TotalNumberOfClasses"
+          Property="LightSwitchCommonModule:ReportSchoolView/Properties[TotalNumberOfClasses]" />
+        <WcfRiaProperty
+          Name="TotalNumberOfCounselor"
+          Property="LightSwitchCommonModule:ReportSchoolView/Properties[TotalNumberOfCounselor]" />
+        <WcfRiaProperty
+          Name="TotalNumberOfRounds"
+          Property="LightSwitchCommonModule:ReportSchoolView/Properties[TotalNumberOfRounds]" />
+        <WcfRiaProperty
+          Name="Comments"
+          Property="LightSwitchCommonModule:ReportSchoolView/Properties[Comments]" />
+        <WcfRiaProperty
+          Name="ActivityPlace"
+          Property="LightSwitchCommonModule:ReportSchoolView/Properties[ActivityPlace]" />
+        <WcfRiaProperty
+          Name="District"
+          Property="LightSwitchCommonModule:ReportSchoolView/Properties[District]" />
+        <WcfRiaProperty
+          Name="ActivityStatus"
+          Property="LightSwitchCommonModule:ReportSchoolView/Properties[ActivityStatus]" />
+        <WcfRiaProperty
+          Name="ActivityDate"
+          Property="LightSwitchCommonModule:ReportSchoolView/Properties[ActivityDate]" />
+        <WcfRiaProperty
+          Name="ActivityType"
+          Property="LightSwitchCommonModule:ReportSchoolView/Properties[ActivityType]" />
+        <WcfRiaProperty
+          Name="SchoolType"
+          Property="LightSwitchCommonModule:ReportSchoolView/Properties[SchoolType]" />
+        <WcfRiaProperty
+          Name="Contact"
+          Property="LightSwitchCommonModule:ReportSchoolView/Properties[Contact]" />
+        <WcfRiaProperty
+          Name="Audience"
+          Property="LightSwitchCommonModule:ReportSchoolView/Properties[Audience]" />
+        <WcfRiaProperty
+          Name="ContactPhone"
+          Property="LightSwitchCommonModule:ReportSchoolView/Properties[ContactPhone]" />
+        <WcfRiaProperty
+          Name="DistrictId"
+          Property="LightSwitchCommonModule:ReportSchoolView/Properties[DistrictId]" />
+        <WcfRiaProperty
+          Name="CounselorInActivity"
+          Property="LightSwitchCommonModule:ReportSchoolView/Properties[CounselorInActivity]" />
+        <WcfRiaProperty
+          Name="NumberOfAssigedCounselor"
+          Property="LightSwitchCommonModule:ReportSchoolView/Properties[NumberOfAssigedCounselor]" />
+        <WcfRiaProperty
+          Name="IsMissingCounselors"
+          Property="LightSwitchCommonModule:ReportSchoolView/Properties[IsMissingCounselors]" />
+        <WcfRiaProperty
+          Name="StartTime"
+          Property="LightSwitchCommonModule:ReportSchoolView/Properties[StartTime]" />
+        <WcfRiaProperty
+          Name="EndTime"
+          Property="LightSwitchCommonModule:ReportSchoolView/Properties[EndTime]" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <EntitySetMapping
+      EntitySet="ActivityViews">
+      <EntitySetMapping.Attributes>
+        <WcfRiaEntitySet
+          EntitySetQuery="GetActivity"
+          EntityTypeName="Binyamin.Reporting.ActivityView" />
+        <WcfRiaProperty
+          Name="ActivityId"
+          Property="LightSwitchCommonModule:ActivityView/Properties[ActivityId]" />
+        <WcfRiaProperty
+          Name="SchoolName"
+          Property="LightSwitchCommonModule:ActivityView/Properties[SchoolName]" />
+        <WcfRiaProperty
+          Name="SchoolPartName"
+          Property="LightSwitchCommonModule:ActivityView/Properties[SchoolPartName]" />
+        <WcfRiaProperty
+          Name="TopicCollection"
+          Property="LightSwitchCommonModule:ActivityView/Properties[TopicCollection]" />
+        <WcfRiaProperty
+          Name="Topic"
+          Property="LightSwitchCommonModule:ActivityView/Properties[Topic]" />
+        <WcfRiaProperty
+          Name="TotalNumberOfClasses"
+          Property="LightSwitchCommonModule:ActivityView/Properties[TotalNumberOfClasses]" />
+        <WcfRiaProperty
+          Name="TotalNumberOfCounselor"
+          Property="LightSwitchCommonModule:ActivityView/Properties[TotalNumberOfCounselor]" />
+        <WcfRiaProperty
+          Name="TotalNumberOfRounds"
+          Property="LightSwitchCommonModule:ActivityView/Properties[TotalNumberOfRounds]" />
+        <WcfRiaProperty
+          Name="Comments"
+          Property="LightSwitchCommonModule:ActivityView/Properties[Comments]" />
+        <WcfRiaProperty
+          Name="ActivityPlace"
+          Property="LightSwitchCommonModule:ActivityView/Properties[ActivityPlace]" />
+        <WcfRiaProperty
+          Name="District"
+          Property="LightSwitchCommonModule:ActivityView/Properties[District]" />
+        <WcfRiaProperty
+          Name="ActivityStatus"
+          Property="LightSwitchCommonModule:ActivityView/Properties[ActivityStatusId]" />
+        <WcfRiaProperty
+          Name="ActivityDate"
+          Property="LightSwitchCommonModule:ActivityView/Properties[ActivityDate]" />
+        <WcfRiaProperty
+          Name="ActivityType"
+          Property="LightSwitchCommonModule:ActivityView/Properties[ActivityType]" />
+        <WcfRiaProperty
+          Name="SchoolType"
+          Property="LightSwitchCommonModule:ActivityView/Properties[SchoolType]" />
+        <WcfRiaProperty
+          Name="Contact"
+          Property="LightSwitchCommonModule:ActivityView/Properties[Contact]" />
+        <WcfRiaProperty
+          Name="Audience"
+          Property="LightSwitchCommonModule:ActivityView/Properties[Audience]" />
+        <WcfRiaProperty
+          Name="ContactPhone"
+          Property="LightSwitchCommonModule:ActivityView/Properties[ContactPhone]" />
+        <WcfRiaProperty
+          Name="DistrictId"
+          Property="LightSwitchCommonModule:ActivityView/Properties[DistrictId]" />
+        <WcfRiaProperty
+          Name="CounselorInActivity"
+          Property="LightSwitchCommonModule:ActivityView/Properties[CounselorInActivity]" />
+        <WcfRiaProperty
+          Name="NumberOfAssigedCounselor"
+          Property="LightSwitchCommonModule:ActivityView/Properties[NumberOfAssigedCounselor]" />
+        <WcfRiaProperty
+          Name="IsMissingCounselors"
+          Property="LightSwitchCommonModule:ActivityView/Properties[IsMissingCounselors]" />
+        <WcfRiaProperty
+          Name="StartTime"
+          Property="LightSwitchCommonModule:ActivityView/Properties[StartTime]" />
+        <WcfRiaProperty
+          Name="EndTime"
+          Property="LightSwitchCommonModule:ActivityView/Properties[EndTime]" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <EntitySetMapping
+      EntitySet="SchoolViews">
+      <EntitySetMapping.Attributes>
+        <WcfRiaEntitySet
+          EntitySetQuery="GetSchools"
+          EntityTypeName="Binyamin.Reporting.SchoolView" />
+        <WcfRiaProperty
+          Name="SchoolId"
+          Property="LightSwitchCommonModule:SchoolView/Properties[SchoolId]" />
+        <WcfRiaProperty
+          Name="SchoolFullName"
+          Property="LightSwitchCommonModule:SchoolView/Properties[SchoolFullName]" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <EntitySetMapping
+      EntitySet="CounselorViews">
+      <EntitySetMapping.Attributes>
+        <WcfRiaEntitySet
+          EntitySetQuery="GetCounselor"
+          EntityTypeName="Binyamin.Reporting.CounselorView" />
+        <WcfRiaProperty
+          Name="ActivityId"
+          Property="LightSwitchCommonModule:CounselorView/Properties[ActivityId]" />
+        <WcfRiaProperty
+          Name="CounselorInActivity"
+          Property="LightSwitchCommonModule:CounselorView/Properties[CounselorInActivity]" />
+        <WcfRiaProperty
+          Name="TopicCollection"
+          Property="LightSwitchCommonModule:CounselorView/Properties[TopicCollection]" />
+        <WcfRiaProperty
+          Name="Topic"
+          Property="LightSwitchCommonModule:CounselorView/Properties[Topic]" />
+        <WcfRiaProperty
+          Name="SchoolName"
+          Property="LightSwitchCommonModule:CounselorView/Properties[SchoolName]" />
+        <WcfRiaProperty
+          Name="SchoolPartName"
+          Property="LightSwitchCommonModule:CounselorView/Properties[SchoolPartName]" />
+        <WcfRiaProperty
+          Name="ActivityPlace"
+          Property="LightSwitchCommonModule:CounselorView/Properties[ActivityPlace]" />
+        <WcfRiaProperty
+          Name="ActivityDate"
+          Property="LightSwitchCommonModule:CounselorView/Properties[ActivityDate]" />
+        <WcfRiaProperty
+          Name="Audience"
+          Property="LightSwitchCommonModule:CounselorView/Properties[Audience]" />
+        <WcfRiaProperty
+          Name="Month"
+          Property="LightSwitchCommonModule:CounselorView/Properties[Month]" />
+      </EntitySetMapping.Attributes>
+    </EntitySetMapping>
+    <QueryOperationMapping
+      Operation="GetCounselorData">
+      <QueryOperationMapping.Attributes>
+        <WcfRiaQueryOperation
+          Name="GetCounselorData" />
+        <WcfRiaQueryOperationParameter
+          Name="CounselorId"
+          QueryOperationParameter="LightSwitchCommonModule:BinyaminReportData/Members[GetCounselorData]/Parameters[CounselorId]" />
+      </QueryOperationMapping.Attributes>
+    </QueryOperationMapping>
+  </DataService>
+</ModelFragment>

@@ -1,0 +1,470 @@
+c:\users\aviad\documents\visual studio 2010\Projects\Binyamin\Binyamin\Server\bin\Debug\LSCodeGeneratorsTask.mcs
+c:\users\aviad\documents\visual studio 2010\Projects\Binyamin\Binyamin\Server\bin\Debug\Application.Server.dll.config
+c:\users\aviad\documents\visual studio 2010\Projects\Binyamin\Binyamin\Server\bin\Debug\Application.Server.dll
+c:\users\aviad\documents\visual studio 2010\Projects\Binyamin\Binyamin\Server\bin\Debug\Application.Server.pdb
+c:\users\aviad\documents\visual studio 2010\Projects\Binyamin\Binyamin\Server\bin\Debug\Application.Common.dll
+c:\users\aviad\documents\visual studio 2010\Projects\Binyamin\Binyamin\Server\obj\Debug\ResolveAssemblyReference.cache
+c:\users\aviad\documents\visual studio 2010\Projects\Binyamin\Binyamin\Server\obj\Debug\Application.Server.dll
+c:\users\aviad\documents\visual studio 2010\Projects\Binyamin\Binyamin\Server\obj\Debug\Application.Server.pdb
+C:\Binyamin\Binyamin\Server\bin\Debug\LSCodeGeneratorsTask.mcs
+C:\Binyamin\Binyamin\Server\bin\Debug\Application.Server.dll.config
+C:\Binyamin\Binyamin\Server\bin\Debug\Application.Server.dll
+C:\Binyamin\Binyamin\Server\bin\Debug\Application.Server.pdb
+C:\Binyamin\Binyamin\Server\bin\Debug\Application.Common.dll
+C:\Binyamin\Binyamin\Server\obj\Debug\ResolveAssemblyReference.cache
+C:\Binyamin\Binyamin\Server\obj\Debug\Application.Server.dll
+C:\Binyamin\Binyamin\Server\obj\Debug\Application.Server.pdb
+C:\Users\yoni\Downloads\פרויקט\ניסיון 1\Binyamin\Binyamin\Server\bin\Debug\LSCodeGeneratorsTask.mcs
+C:\Users\yoni\Downloads\פרויקט\ניסיון 1\Binyamin\Binyamin\Server\bin\Debug\Application.Server.dll.config
+C:\Users\yoni\Downloads\פרויקט\ניסיון 1\Binyamin\Binyamin\Server\bin\Debug\Application.Server.dll
+C:\Users\yoni\Downloads\פרויקט\ניסיון 1\Binyamin\Binyamin\Server\bin\Debug\Application.Server.pdb
+C:\Users\yoni\Downloads\פרויקט\ניסיון 1\Binyamin\Binyamin\Server\bin\Debug\Application.Common.dll
+C:\Users\yoni\Downloads\פרויקט\ניסיון 1\Binyamin\Binyamin\Server\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\yoni\Downloads\פרויקט\ניסיון 1\Binyamin\Binyamin\Server\obj\Debug\Application.Server.dll
+C:\Users\yoni\Downloads\פרויקט\ניסיון 1\Binyamin\Binyamin\Server\obj\Debug\Application.Server.pdb
+C:\Users\yoni\Downloads\פרויקט\ניסיון 1\Binyamin\Binyamin\Server\bin\Debug\OfficeIntegration.Server.dll
+C:\Users\yoni\Downloads\פרויקט\ניסיון 1 - Copy (8)\Binyamin\Binyamin\Server\bin\Debug\LSCodeGeneratorsTask.mcs
+C:\Users\yoni\Downloads\פרויקט\ניסיון 1 - Copy (8)\Binyamin\Binyamin\Server\bin\Debug\Application.Server.dll.config
+C:\Users\yoni\Downloads\פרויקט\ניסיון 1 - Copy (8)\Binyamin\Binyamin\Server\bin\Debug\Application.Server.dll
+C:\Users\yoni\Downloads\פרויקט\ניסיון 1 - Copy (8)\Binyamin\Binyamin\Server\bin\Debug\Application.Server.pdb
+C:\Users\yoni\Downloads\פרויקט\ניסיון 1 - Copy (8)\Binyamin\Binyamin\Server\bin\Debug\Application.Common.dll
+C:\Users\yoni\Downloads\פרויקט\ניסיון 1 - Copy (8)\Binyamin\Binyamin\Server\bin\Debug\OfficeIntegration.Server.dll
+C:\Users\yoni\Downloads\פרויקט\ניסיון 1 - Copy (8)\Binyamin\Binyamin\Server\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\yoni\Downloads\פרויקט\ניסיון 1 - Copy (8)\Binyamin\Binyamin\Server\obj\Debug\Application.Server.dll
+C:\Users\yoni\Downloads\פרויקט\ניסיון 1 - Copy (8)\Binyamin\Binyamin\Server\obj\Debug\Application.Server.pdb
+C:\Users\yoni\Downloads\פרויקט\ניסיון 1 - Copy (8) - Copy\Binyamin\Binyamin\Server\bin\Debug\LSCodeGeneratorsTask.mcs
+C:\Users\yoni\Downloads\פרויקט\ניסיון 1 - Copy (8) - Copy\Binyamin\Binyamin\Server\bin\Debug\Application.Server.dll.config
+C:\Users\yoni\Downloads\פרויקט\ניסיון 1 - Copy (8) - Copy\Binyamin\Binyamin\Server\bin\Debug\Application.Server.dll
+C:\Users\yoni\Downloads\פרויקט\ניסיון 1 - Copy (8) - Copy\Binyamin\Binyamin\Server\bin\Debug\Application.Server.pdb
+C:\Users\yoni\Downloads\פרויקט\ניסיון 1 - Copy (8) - Copy\Binyamin\Binyamin\Server\bin\Debug\Application.Common.dll
+C:\Users\yoni\Downloads\פרויקט\ניסיון 1 - Copy (8) - Copy\Binyamin\Binyamin\Server\bin\Debug\OfficeIntegration.Server.dll
+C:\Users\yoni\Downloads\פרויקט\ניסיון 1 - Copy (8) - Copy\Binyamin\Binyamin\Server\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\yoni\Downloads\פרויקט\ניסיון 1 - Copy (8) - Copy\Binyamin\Binyamin\Server\obj\Debug\Application.Server.dll
+C:\Users\yoni\Downloads\פרויקט\ניסיון 1 - Copy (8) - Copy\Binyamin\Binyamin\Server\obj\Debug\Application.Server.pdb
+C:\Users\IDAN\Documents\Visual Studio 2010\Projects\Binyamin YDIR\Binyamin\Binyamin\Server\bin\Debug\LSCodeGeneratorsTask.mcs
+C:\Users\IDAN\Documents\Visual Studio 2010\Projects\Binyamin YDIR\Binyamin\Binyamin\Server\bin\Debug\Application.Server.dll.config
+C:\Users\IDAN\Documents\Visual Studio 2010\Projects\Binyamin YDIR\Binyamin\Binyamin\Server\bin\Debug\Application.Server.dll
+C:\Users\IDAN\Documents\Visual Studio 2010\Projects\Binyamin YDIR\Binyamin\Binyamin\Server\bin\Debug\Application.Server.pdb
+C:\Users\IDAN\Documents\Visual Studio 2010\Projects\Binyamin YDIR\Binyamin\Binyamin\Server\bin\Debug\Application.Common.dll
+C:\Users\IDAN\Documents\Visual Studio 2010\Projects\Binyamin YDIR\Binyamin\Binyamin\Server\bin\Debug\OfficeIntegration.Server.dll
+C:\Users\IDAN\Documents\Visual Studio 2010\Projects\Binyamin YDIR\Binyamin\Binyamin\Server\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\IDAN\Documents\Visual Studio 2010\Projects\Binyamin YDIR\Binyamin\Binyamin\Server\obj\Debug\Application.Server.dll
+C:\Users\IDAN\Documents\Visual Studio 2010\Projects\Binyamin YDIR\Binyamin\Binyamin\Server\obj\Debug\Application.Server.pdb
+C:\Users\Roey\Documents\Visual Studio 2010\Projects\Binyamin YDIR\Binyamin\Binyamin\Server\bin\Debug\LSCodeGeneratorsTask.mcs
+C:\Users\Roey\Documents\Visual Studio 2010\Projects\Binyamin YDIR\Binyamin\Binyamin\Server\bin\Debug\Application.Server.dll.config
+C:\Users\Roey\Documents\Visual Studio 2010\Projects\Binyamin YDIR\Binyamin\Binyamin\Server\bin\Debug\Application.Server.dll
+C:\Users\Roey\Documents\Visual Studio 2010\Projects\Binyamin YDIR\Binyamin\Binyamin\Server\bin\Debug\Application.Server.pdb
+C:\Users\Roey\Documents\Visual Studio 2010\Projects\Binyamin YDIR\Binyamin\Binyamin\Server\bin\Debug\Application.Common.dll
+C:\Users\Roey\Documents\Visual Studio 2010\Projects\Binyamin YDIR\Binyamin\Binyamin\Server\bin\Debug\OfficeIntegration.Server.dll
+C:\Users\Roey\Documents\Visual Studio 2010\Projects\Binyamin YDIR\Binyamin\Binyamin\Server\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Roey\Documents\Visual Studio 2010\Projects\Binyamin YDIR\Binyamin\Binyamin\Server\obj\Debug\Application.Server.dll
+C:\Users\Roey\Documents\Visual Studio 2010\Projects\Binyamin YDIR\Binyamin\Binyamin\Server\obj\Debug\Application.Server.pdb
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\LSSvcGeneratorsTask.mcs
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\LSResourceGeneratorsTask.mcs
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\LSServerCodeGeneratorsTask.mcs
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\Application.Server.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\Application.Server.pdb
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\Application.Common.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\BinyaminSerivces.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\Microsoft.Data.Edm.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\Microsoft.Data.OData.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\Microsoft.Data.Services.Client.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\Microsoft.Data.Services.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\Microsoft.LightSwitch.AppBridge.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\Microsoft.LightSwitch.Base.Server.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\Microsoft.LightSwitch.CodeMarker.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\Microsoft.LightSwitch.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\Microsoft.LightSwitch.ExportProvider.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\Microsoft.LightSwitch.Extensions.Server.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\Microsoft.LightSwitch.ManifestService.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\Microsoft.LightSwitch.Model.Xaml.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\Microsoft.LightSwitch.Server.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\Microsoft.LightSwitch.Server.Host.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\Microsoft.LightSwitch.Server.Internal.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\OfficeIntegration.Common.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\OfficeIntegration.Server.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\System.ServiceModel.DomainServices.EntityFramework.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\System.ServiceModel.DomainServices.Hosting.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\System.ServiceModel.DomainServices.Hosting.OData.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\System.ServiceModel.DomainServices.Server.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\System.ServiceModel.PollingDuplex.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\System.Spatial.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\Microsoft.WindowsAzure.ServiceRuntime.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\BinyaminSerivces.pdb
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\Microsoft.Data.Edm.xml
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\Microsoft.Data.OData.xml
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\Microsoft.Data.Services.xml
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\Microsoft.Data.Services.Client.xml
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\System.ServiceModel.DomainServices.EntityFramework.xml
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\System.ServiceModel.DomainServices.Hosting.xml
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\System.ServiceModel.DomainServices.Hosting.OData.xml
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\System.ServiceModel.DomainServices.Server.xml
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\System.Spatial.xml
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\Microsoft.LightSwitch.xml
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\Microsoft.LightSwitch.Server.xml
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ar\Microsoft.LightSwitch.ExportProvider.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\bg\Microsoft.LightSwitch.ExportProvider.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ca\Microsoft.LightSwitch.ExportProvider.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\cs\Microsoft.LightSwitch.ExportProvider.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\da\Microsoft.LightSwitch.ExportProvider.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\de\Microsoft.LightSwitch.ExportProvider.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\el\Microsoft.LightSwitch.ExportProvider.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\es\Microsoft.LightSwitch.ExportProvider.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\et\Microsoft.LightSwitch.ExportProvider.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\eu\Microsoft.LightSwitch.ExportProvider.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\fi\Microsoft.LightSwitch.ExportProvider.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\fr\Microsoft.LightSwitch.ExportProvider.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\he\Microsoft.LightSwitch.ExportProvider.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\hr\Microsoft.LightSwitch.ExportProvider.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\hu\Microsoft.LightSwitch.ExportProvider.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\id\Microsoft.LightSwitch.ExportProvider.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\it\Microsoft.LightSwitch.ExportProvider.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ja\Microsoft.LightSwitch.ExportProvider.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ko\Microsoft.LightSwitch.ExportProvider.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\lt\Microsoft.LightSwitch.ExportProvider.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\lv\Microsoft.LightSwitch.ExportProvider.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ms\Microsoft.LightSwitch.ExportProvider.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\nl\Microsoft.LightSwitch.ExportProvider.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\no\Microsoft.LightSwitch.ExportProvider.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\pl\Microsoft.LightSwitch.ExportProvider.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\pt\Microsoft.LightSwitch.ExportProvider.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\pt-BR\Microsoft.LightSwitch.ExportProvider.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ro\Microsoft.LightSwitch.ExportProvider.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ru\Microsoft.LightSwitch.ExportProvider.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\sk\Microsoft.LightSwitch.ExportProvider.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\sl\Microsoft.LightSwitch.ExportProvider.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\sr-Cyrl-CS\Microsoft.LightSwitch.ExportProvider.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\sr-Latn-CS\Microsoft.LightSwitch.ExportProvider.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\sv\Microsoft.LightSwitch.ExportProvider.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\th\Microsoft.LightSwitch.ExportProvider.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\tr\Microsoft.LightSwitch.ExportProvider.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\uk\Microsoft.LightSwitch.ExportProvider.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\vi\Microsoft.LightSwitch.ExportProvider.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\zh-Hans\Microsoft.LightSwitch.ExportProvider.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\zh-Hant\Microsoft.LightSwitch.ExportProvider.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ar\Microsoft.LightSwitch.Extensions.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\bg\Microsoft.LightSwitch.Extensions.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ca\Microsoft.LightSwitch.Extensions.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\cs\Microsoft.LightSwitch.Extensions.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\da\Microsoft.LightSwitch.Extensions.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\de\Microsoft.LightSwitch.Extensions.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\el\Microsoft.LightSwitch.Extensions.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\es\Microsoft.LightSwitch.Extensions.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\et\Microsoft.LightSwitch.Extensions.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\eu\Microsoft.LightSwitch.Extensions.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\fi\Microsoft.LightSwitch.Extensions.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\fr\Microsoft.LightSwitch.Extensions.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\he\Microsoft.LightSwitch.Extensions.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\hr\Microsoft.LightSwitch.Extensions.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\hu\Microsoft.LightSwitch.Extensions.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\id\Microsoft.LightSwitch.Extensions.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\it\Microsoft.LightSwitch.Extensions.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ja\Microsoft.LightSwitch.Extensions.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ko\Microsoft.LightSwitch.Extensions.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\lt\Microsoft.LightSwitch.Extensions.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\lv\Microsoft.LightSwitch.Extensions.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ms\Microsoft.LightSwitch.Extensions.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\nl\Microsoft.LightSwitch.Extensions.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\no\Microsoft.LightSwitch.Extensions.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\pl\Microsoft.LightSwitch.Extensions.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\pt\Microsoft.LightSwitch.Extensions.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\pt-BR\Microsoft.LightSwitch.Extensions.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ro\Microsoft.LightSwitch.Extensions.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ru\Microsoft.LightSwitch.Extensions.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\sk\Microsoft.LightSwitch.Extensions.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\sl\Microsoft.LightSwitch.Extensions.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\sr-Cyrl-CS\Microsoft.LightSwitch.Extensions.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\sr-Latn-CS\Microsoft.LightSwitch.Extensions.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\sv\Microsoft.LightSwitch.Extensions.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\th\Microsoft.LightSwitch.Extensions.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\tr\Microsoft.LightSwitch.Extensions.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\uk\Microsoft.LightSwitch.Extensions.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\vi\Microsoft.LightSwitch.Extensions.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\zh-Hans\Microsoft.LightSwitch.Extensions.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\zh-Hant\Microsoft.LightSwitch.Extensions.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ar\Microsoft.LightSwitch.ManifestService.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\bg\Microsoft.LightSwitch.ManifestService.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ca\Microsoft.LightSwitch.ManifestService.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\cs\Microsoft.LightSwitch.ManifestService.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\da\Microsoft.LightSwitch.ManifestService.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\de\Microsoft.LightSwitch.ManifestService.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\el\Microsoft.LightSwitch.ManifestService.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\es\Microsoft.LightSwitch.ManifestService.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\et\Microsoft.LightSwitch.ManifestService.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\eu\Microsoft.LightSwitch.ManifestService.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\fi\Microsoft.LightSwitch.ManifestService.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\fr\Microsoft.LightSwitch.ManifestService.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\he\Microsoft.LightSwitch.ManifestService.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\hr\Microsoft.LightSwitch.ManifestService.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\hu\Microsoft.LightSwitch.ManifestService.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\id\Microsoft.LightSwitch.ManifestService.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\it\Microsoft.LightSwitch.ManifestService.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ja\Microsoft.LightSwitch.ManifestService.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ko\Microsoft.LightSwitch.ManifestService.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\lt\Microsoft.LightSwitch.ManifestService.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\lv\Microsoft.LightSwitch.ManifestService.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ms\Microsoft.LightSwitch.ManifestService.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\nl\Microsoft.LightSwitch.ManifestService.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\no\Microsoft.LightSwitch.ManifestService.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\pl\Microsoft.LightSwitch.ManifestService.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\pt\Microsoft.LightSwitch.ManifestService.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\pt-BR\Microsoft.LightSwitch.ManifestService.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ro\Microsoft.LightSwitch.ManifestService.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ru\Microsoft.LightSwitch.ManifestService.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\sk\Microsoft.LightSwitch.ManifestService.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\sl\Microsoft.LightSwitch.ManifestService.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\sr-Cyrl-CS\Microsoft.LightSwitch.ManifestService.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\sr-Latn-CS\Microsoft.LightSwitch.ManifestService.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\sv\Microsoft.LightSwitch.ManifestService.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\th\Microsoft.LightSwitch.ManifestService.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\tr\Microsoft.LightSwitch.ManifestService.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\uk\Microsoft.LightSwitch.ManifestService.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\vi\Microsoft.LightSwitch.ManifestService.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\zh-Hans\Microsoft.LightSwitch.ManifestService.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\zh-Hant\Microsoft.LightSwitch.ManifestService.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ar\Microsoft.LightSwitch.Model.Xaml.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\bg\Microsoft.LightSwitch.Model.Xaml.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ca\Microsoft.LightSwitch.Model.Xaml.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\cs\Microsoft.LightSwitch.Model.Xaml.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\da\Microsoft.LightSwitch.Model.Xaml.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\de\Microsoft.LightSwitch.Model.Xaml.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\el\Microsoft.LightSwitch.Model.Xaml.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\es\Microsoft.LightSwitch.Model.Xaml.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\et\Microsoft.LightSwitch.Model.Xaml.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\eu\Microsoft.LightSwitch.Model.Xaml.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\fi\Microsoft.LightSwitch.Model.Xaml.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\fr\Microsoft.LightSwitch.Model.Xaml.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\he\Microsoft.LightSwitch.Model.Xaml.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\hr\Microsoft.LightSwitch.Model.Xaml.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\hu\Microsoft.LightSwitch.Model.Xaml.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\id\Microsoft.LightSwitch.Model.Xaml.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\it\Microsoft.LightSwitch.Model.Xaml.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ja\Microsoft.LightSwitch.Model.Xaml.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ko\Microsoft.LightSwitch.Model.Xaml.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\lt\Microsoft.LightSwitch.Model.Xaml.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\lv\Microsoft.LightSwitch.Model.Xaml.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ms\Microsoft.LightSwitch.Model.Xaml.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\nl\Microsoft.LightSwitch.Model.Xaml.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\no\Microsoft.LightSwitch.Model.Xaml.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\pl\Microsoft.LightSwitch.Model.Xaml.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\pt\Microsoft.LightSwitch.Model.Xaml.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\pt-BR\Microsoft.LightSwitch.Model.Xaml.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ro\Microsoft.LightSwitch.Model.Xaml.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ru\Microsoft.LightSwitch.Model.Xaml.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\sk\Microsoft.LightSwitch.Model.Xaml.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\sl\Microsoft.LightSwitch.Model.Xaml.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\sr-Cyrl-CS\Microsoft.LightSwitch.Model.Xaml.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\sr-Latn-CS\Microsoft.LightSwitch.Model.Xaml.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\sv\Microsoft.LightSwitch.Model.Xaml.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\th\Microsoft.LightSwitch.Model.Xaml.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\tr\Microsoft.LightSwitch.Model.Xaml.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\uk\Microsoft.LightSwitch.Model.Xaml.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\vi\Microsoft.LightSwitch.Model.Xaml.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\zh-Hans\Microsoft.LightSwitch.Model.Xaml.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\zh-Hant\Microsoft.LightSwitch.Model.Xaml.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ar\Microsoft.LightSwitch.Server.Host.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\bg\Microsoft.LightSwitch.Server.Host.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ca\Microsoft.LightSwitch.Server.Host.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\cs\Microsoft.LightSwitch.Server.Host.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\da\Microsoft.LightSwitch.Server.Host.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\de\Microsoft.LightSwitch.Server.Host.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\el\Microsoft.LightSwitch.Server.Host.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\es\Microsoft.LightSwitch.Server.Host.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\et\Microsoft.LightSwitch.Server.Host.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\eu\Microsoft.LightSwitch.Server.Host.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\fi\Microsoft.LightSwitch.Server.Host.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\fr\Microsoft.LightSwitch.Server.Host.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\he\Microsoft.LightSwitch.Server.Host.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\hr\Microsoft.LightSwitch.Server.Host.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\hu\Microsoft.LightSwitch.Server.Host.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\id\Microsoft.LightSwitch.Server.Host.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\it\Microsoft.LightSwitch.Server.Host.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ja\Microsoft.LightSwitch.Server.Host.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ko\Microsoft.LightSwitch.Server.Host.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\lt\Microsoft.LightSwitch.Server.Host.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\lv\Microsoft.LightSwitch.Server.Host.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ms\Microsoft.LightSwitch.Server.Host.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\nl\Microsoft.LightSwitch.Server.Host.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\no\Microsoft.LightSwitch.Server.Host.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\pl\Microsoft.LightSwitch.Server.Host.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\pt\Microsoft.LightSwitch.Server.Host.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\pt-BR\Microsoft.LightSwitch.Server.Host.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ro\Microsoft.LightSwitch.Server.Host.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ru\Microsoft.LightSwitch.Server.Host.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\sk\Microsoft.LightSwitch.Server.Host.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\sl\Microsoft.LightSwitch.Server.Host.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\sr-Cyrl-CS\Microsoft.LightSwitch.Server.Host.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\sr-Latn-CS\Microsoft.LightSwitch.Server.Host.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\sv\Microsoft.LightSwitch.Server.Host.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\th\Microsoft.LightSwitch.Server.Host.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\tr\Microsoft.LightSwitch.Server.Host.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\uk\Microsoft.LightSwitch.Server.Host.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\vi\Microsoft.LightSwitch.Server.Host.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\zh-Hans\Microsoft.LightSwitch.Server.Host.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\zh-Hant\Microsoft.LightSwitch.Server.Host.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ar\Microsoft.LightSwitch.Server.Internal.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\bg\Microsoft.LightSwitch.Server.Internal.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ca\Microsoft.LightSwitch.Server.Internal.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\cs\Microsoft.LightSwitch.Server.Internal.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\da\Microsoft.LightSwitch.Server.Internal.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\de\Microsoft.LightSwitch.Server.Internal.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\el\Microsoft.LightSwitch.Server.Internal.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\es\Microsoft.LightSwitch.Server.Internal.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\et\Microsoft.LightSwitch.Server.Internal.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\eu\Microsoft.LightSwitch.Server.Internal.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\fi\Microsoft.LightSwitch.Server.Internal.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\fr\Microsoft.LightSwitch.Server.Internal.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\he\Microsoft.LightSwitch.Server.Internal.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\hr\Microsoft.LightSwitch.Server.Internal.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\hu\Microsoft.LightSwitch.Server.Internal.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\id\Microsoft.LightSwitch.Server.Internal.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\it\Microsoft.LightSwitch.Server.Internal.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ja\Microsoft.LightSwitch.Server.Internal.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ko\Microsoft.LightSwitch.Server.Internal.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\lt\Microsoft.LightSwitch.Server.Internal.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\lv\Microsoft.LightSwitch.Server.Internal.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ms\Microsoft.LightSwitch.Server.Internal.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\nl\Microsoft.LightSwitch.Server.Internal.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\no\Microsoft.LightSwitch.Server.Internal.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\pl\Microsoft.LightSwitch.Server.Internal.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\pt\Microsoft.LightSwitch.Server.Internal.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\pt-BR\Microsoft.LightSwitch.Server.Internal.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ro\Microsoft.LightSwitch.Server.Internal.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ru\Microsoft.LightSwitch.Server.Internal.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\sk\Microsoft.LightSwitch.Server.Internal.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\sl\Microsoft.LightSwitch.Server.Internal.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\sr-Cyrl-CS\Microsoft.LightSwitch.Server.Internal.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\sr-Latn-CS\Microsoft.LightSwitch.Server.Internal.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\sv\Microsoft.LightSwitch.Server.Internal.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\th\Microsoft.LightSwitch.Server.Internal.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\tr\Microsoft.LightSwitch.Server.Internal.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\uk\Microsoft.LightSwitch.Server.Internal.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\vi\Microsoft.LightSwitch.Server.Internal.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\zh-Hans\Microsoft.LightSwitch.Server.Internal.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\zh-Hant\Microsoft.LightSwitch.Server.Internal.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\de\System.ServiceModel.DomainServices.EntityFramework.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\es\System.ServiceModel.DomainServices.EntityFramework.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\fr\System.ServiceModel.DomainServices.EntityFramework.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\it\System.ServiceModel.DomainServices.EntityFramework.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ja\System.ServiceModel.DomainServices.EntityFramework.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ko\System.ServiceModel.DomainServices.EntityFramework.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ru\System.ServiceModel.DomainServices.EntityFramework.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\zh-Hans\System.ServiceModel.DomainServices.EntityFramework.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\zh-Hant\System.ServiceModel.DomainServices.EntityFramework.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\de\System.ServiceModel.DomainServices.Hosting.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\es\System.ServiceModel.DomainServices.Hosting.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\fr\System.ServiceModel.DomainServices.Hosting.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\it\System.ServiceModel.DomainServices.Hosting.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ja\System.ServiceModel.DomainServices.Hosting.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ko\System.ServiceModel.DomainServices.Hosting.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ru\System.ServiceModel.DomainServices.Hosting.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\zh-Hans\System.ServiceModel.DomainServices.Hosting.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\zh-Hant\System.ServiceModel.DomainServices.Hosting.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\de\System.ServiceModel.DomainServices.Hosting.OData.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\es\System.ServiceModel.DomainServices.Hosting.OData.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\fr\System.ServiceModel.DomainServices.Hosting.OData.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\it\System.ServiceModel.DomainServices.Hosting.OData.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ja\System.ServiceModel.DomainServices.Hosting.OData.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ko\System.ServiceModel.DomainServices.Hosting.OData.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ru\System.ServiceModel.DomainServices.Hosting.OData.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\zh-Hans\System.ServiceModel.DomainServices.Hosting.OData.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\zh-Hant\System.ServiceModel.DomainServices.Hosting.OData.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\de\System.ServiceModel.DomainServices.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\es\System.ServiceModel.DomainServices.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\fr\System.ServiceModel.DomainServices.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\it\System.ServiceModel.DomainServices.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ja\System.ServiceModel.DomainServices.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ko\System.ServiceModel.DomainServices.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ru\System.ServiceModel.DomainServices.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\zh-Hans\System.ServiceModel.DomainServices.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\zh-Hant\System.ServiceModel.DomainServices.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ar\Microsoft.LightSwitch.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\bg\Microsoft.LightSwitch.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ca\Microsoft.LightSwitch.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\cs\Microsoft.LightSwitch.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\da\Microsoft.LightSwitch.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\de\Microsoft.LightSwitch.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\el\Microsoft.LightSwitch.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\es\Microsoft.LightSwitch.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\et\Microsoft.LightSwitch.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\eu\Microsoft.LightSwitch.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\fi\Microsoft.LightSwitch.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\fr\Microsoft.LightSwitch.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\he\Microsoft.LightSwitch.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\hr\Microsoft.LightSwitch.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\hu\Microsoft.LightSwitch.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\id\Microsoft.LightSwitch.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\it\Microsoft.LightSwitch.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ja\Microsoft.LightSwitch.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ko\Microsoft.LightSwitch.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\lt\Microsoft.LightSwitch.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\lv\Microsoft.LightSwitch.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ms\Microsoft.LightSwitch.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\nl\Microsoft.LightSwitch.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\no\Microsoft.LightSwitch.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\pl\Microsoft.LightSwitch.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\pt\Microsoft.LightSwitch.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\pt-BR\Microsoft.LightSwitch.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ro\Microsoft.LightSwitch.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ru\Microsoft.LightSwitch.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\sk\Microsoft.LightSwitch.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\sl\Microsoft.LightSwitch.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\sr-Cyrl-CS\Microsoft.LightSwitch.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\sr-Latn-CS\Microsoft.LightSwitch.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\sv\Microsoft.LightSwitch.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\th\Microsoft.LightSwitch.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\tr\Microsoft.LightSwitch.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\uk\Microsoft.LightSwitch.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\vi\Microsoft.LightSwitch.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\zh-Hans\Microsoft.LightSwitch.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\zh-Hant\Microsoft.LightSwitch.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ar\Microsoft.LightSwitch.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\bg\Microsoft.LightSwitch.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ca\Microsoft.LightSwitch.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\cs\Microsoft.LightSwitch.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\da\Microsoft.LightSwitch.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\de\Microsoft.LightSwitch.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\el\Microsoft.LightSwitch.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\es\Microsoft.LightSwitch.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\et\Microsoft.LightSwitch.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\eu\Microsoft.LightSwitch.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\fi\Microsoft.LightSwitch.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\fr\Microsoft.LightSwitch.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\he\Microsoft.LightSwitch.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\hr\Microsoft.LightSwitch.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\hu\Microsoft.LightSwitch.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\id\Microsoft.LightSwitch.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\it\Microsoft.LightSwitch.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ja\Microsoft.LightSwitch.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ko\Microsoft.LightSwitch.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\lt\Microsoft.LightSwitch.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\lv\Microsoft.LightSwitch.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ms\Microsoft.LightSwitch.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\nl\Microsoft.LightSwitch.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\no\Microsoft.LightSwitch.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\pl\Microsoft.LightSwitch.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\pt\Microsoft.LightSwitch.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\pt-BR\Microsoft.LightSwitch.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ro\Microsoft.LightSwitch.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\ru\Microsoft.LightSwitch.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\sk\Microsoft.LightSwitch.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\sl\Microsoft.LightSwitch.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\sr-Cyrl-CS\Microsoft.LightSwitch.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\sr-Latn-CS\Microsoft.LightSwitch.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\sv\Microsoft.LightSwitch.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\th\Microsoft.LightSwitch.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\tr\Microsoft.LightSwitch.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\uk\Microsoft.LightSwitch.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\vi\Microsoft.LightSwitch.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\zh-Hans\Microsoft.LightSwitch.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\zh-Hant\Microsoft.LightSwitch.Server.resources.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\obj\Debug\Server.csprojResolveAssemblyReference.cache
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\obj\Debug\Application.Server.dll
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\obj\Debug\Application.Server.pdb
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\Web.config
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\Web.Debug.config
+D:\personal\Binyamin2011\Binyamin\Binyamin\Server\bin\Debug\Web.Release.config
+D:\personal\Binyamin2012\Binyamin\Binyamin\Server\bin\Debug\LSSvcGeneratorsTask.mcs
+D:\personal\Binyamin2012\Binyamin\Binyamin\Server\bin\Debug\LSResourceGeneratorsTask.mcs
+D:\personal\Binyamin2012\Binyamin\Binyamin\Server\bin\Debug\LSServerCodeGeneratorsTask.mcs
+D:\personal\Binyamin2012\Binyamin\Binyamin\Server\obj\Debug\Server.csprojResolveAssemblyReference.cache
